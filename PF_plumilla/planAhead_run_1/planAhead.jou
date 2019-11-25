@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7
+# Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+# Start of session at: Sun Nov 24 18:07:08 2019
+# Process ID: 15728
+# Log file: C:/Users/Jose Antonio/Desktop/ProyecSistemDigit/PF_plumilla/planAhead_run_1/planAhead.log
+# Journal file: C:/Users/Jose Antonio/Desktop/ProyecSistemDigit/PF_plumilla/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source {C:/Users/Jose Antonio/Desktop/ProyecSistemDigit/PF_plumilla/pa.fromNetlist.tcl}
+startgroup
+set_property package_pin A3 [get_ports Clk]
+endgroup
+save_constraints
