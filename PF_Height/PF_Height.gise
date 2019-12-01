@@ -24,9 +24,13 @@
   <files xmlns="http://www.xilinx.com/XMLSchema">
     <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="Height.cmd_log"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="Height.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="Height.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="Height.ngr"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Height.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="Height.stx"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="Height.syr"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="Height.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Height_envsettings.html"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="Height_summary.html"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Height_xst.xrpt"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
@@ -37,6 +41,7 @@
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
     <transform xil_pn:end_ts="1575059402" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1575059402">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
     </transform>
     <transform xil_pn:end_ts="1575059402" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-3634756546633997293" xil_pn:start_ts="1575059402">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -62,12 +67,15 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1575062285" xil_pn:in_ck="3488286314529193" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="737875157762313179" xil_pn:start_ts="1575062279">
-      <status xil_pn:value="FailedRun"/>
+    <transform xil_pn:end_ts="1575163813" xil_pn:in_ck="3488286314529193" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="737875157762313179" xil_pn:start_ts="1575163804">
+      <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="Height.lso"/>
+      <outfile xil_pn:name="Height.ngc"/>
+      <outfile xil_pn:name="Height.ngr"/>
       <outfile xil_pn:name="Height.prj"/>
+      <outfile xil_pn:name="Height.stx"/>
       <outfile xil_pn:name="Height.syr"/>
       <outfile xil_pn:name="Height.xst"/>
       <outfile xil_pn:name="Height_xst.xrpt"/>

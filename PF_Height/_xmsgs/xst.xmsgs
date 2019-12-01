@@ -5,10 +5,10 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="92" delta="new" >"D:\Repositories\ProySisDigAva\PF_Height\Height.vhd" Line 76: <arg fmt="%s" index="1">rst</arg> should be on the sensitivity list of the process
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\Repositories\ProySisDigAva\PF_Height\Height.vhd" Line 88: Assignment to <arg fmt="%s" index="1">fee</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="error" file="HDLCompiler" num="664" delta="new" >"D:\Repositories\ProySisDigAva\PF_Height\Height.vhd" Line 96: Nonconstant REAL value <arg fmt="%s" index="1"></arg> is not supported for synthesis
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">Echo</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
 </messages>

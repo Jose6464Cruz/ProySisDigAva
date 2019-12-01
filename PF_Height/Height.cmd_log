@@ -23,3 +23,6 @@ xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/PF_Height/Height.xst" -ofn
 xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/PF_Height/Height.xst" -ofn "D:/Repositories/ProySisDigAva/PF_Height/Height.syr" 
 xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/PF_Height/Height.xst" -ofn "D:/Repositories/ProySisDigAva/PF_Height/Height.syr" 
 xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/PF_Height/Height.xst" -ofn "D:/Repositories/ProySisDigAva/PF_Height/Height.syr" 
+xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/PF_Height/Height.xst" -ofn "D:/Repositories/ProySisDigAva/PF_Height/Height.syr" 
+xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/PF_Height/Height.xst" -ofn "D:/Repositories/ProySisDigAva/PF_Height/Height.syr" 
+xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/PF_Height/Height.xst" -ofn "D:/Repositories/ProySisDigAva/PF_Height/Height.syr" 

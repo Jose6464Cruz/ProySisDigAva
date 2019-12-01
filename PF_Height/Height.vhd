@@ -40,7 +40,7 @@ architecture Height_Arch of Height is
   signal	  Echo_time      : integer range 0 to Sample_Count;
   
   -- Constants used by the Fee Generator
-  constant Total_Height : real := 20.0;				-- 20 cm is the distance from the sensor to the ground
+  constant Total_Height : integer := 120000;				-- 20 cm is the distance from the sensor to the ground
   -- Signal used by the Fee Generator
   signal	  Fee 			: integer range 0 to 200;	-- Fee goes from 0 to 200 Pesos
   
@@ -73,10 +73,7 @@ begin
   -- Echo pulse receiving time
   Echo_pulse: process(Clk)
   begin
-   if Rst = '1' then
-		Count <= 0;
-		
-	elsif (rising_edge(Clk)) then
+	if (rising_edge(Clk)) then
 		-- Echo receive
 		if Echo = '1' then
 			CountE <= CountE + 1;
@@ -89,17 +86,15 @@ begin
   
   -- Fee Generator
   Fee_Generator: process(Echo_time, CountE)
-  variable Distance,Vehicle_Height : real := 0.0;
-  
+  variable Vehicle_Height : integer := 0;
   begin
 	if CountE = 0 then
-		Distance := Real(Echo_time)*34.0/200.0;
-		Vehicle_Height := Total_Height - Distance;	
-		if (Vehicle_Height < 5.0) then
+		Vehicle_Height := Total_Height - Echo_time;	
+		if (Vehicle_Height < 30000) then
 			Fee <= 50;
-		elsif (Vehicle_Height < 10.0) then
+		elsif (Vehicle_Height < 60000) then
 			Fee <= 100;
-		elsif (Vehicle_Height < 15.0) then
+		elsif (Vehicle_Height < 90000) then
 			Fee <= 150;
 		else
 			Fee <= 200;
