@@ -4,7 +4,7 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total CPU time to Xst completion: 0.12 secs
  
 --> Parameter xsthdpdir set to xst
 
@@ -155,7 +155,7 @@ Macro Statistics
  32-bit comparator greater                             : 3
 # Multiplexers                                         : 4
  1-bit 2-to-1 multiplexer                              : 2
- 8-bit 2-to-1 multiplexer                              : 2
+ 4-bit 2-to-1 multiplexer                              : 2
 
 =========================================================================
 
@@ -184,7 +184,7 @@ Macro Statistics
  32-bit comparator greater                             : 3
 # Multiplexers                                         : 4
  1-bit 2-to-1 multiplexer                              : 2
- 8-bit 2-to-1 multiplexer                              : 2
+ 4-bit 2-to-1 multiplexer                              : 2
 
 =========================================================================
 
@@ -228,15 +228,15 @@ Top Level Output File Name         : Height.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 333
+# BELS                             : 334
 #      GND                         : 1
 #      INV                         : 27
 #      LUT1                        : 54
 #      LUT2                        : 1
 #      LUT3                        : 6
-#      LUT4                        : 36
-#      LUT5                        : 25
-#      LUT6                        : 12
+#      LUT4                        : 37
+#      LUT5                        : 26
+#      LUT6                        : 11
 #      MUXCY                       : 93
 #      VCC                         : 1
 #      XORCY                       : 77
@@ -258,14 +258,14 @@ Selected Device : 6slx16csg324-3
 
 Slice Logic Utilization: 
  Number of Slice Registers:              83  out of  18224     0%  
- Number of Slice LUTs:                  161  out of   9112     1%  
-    Number used as Logic:               161  out of   9112     1%  
+ Number of Slice LUTs:                  162  out of   9112     1%  
+    Number used as Logic:               162  out of   9112     1%  
 
 Slice Logic Distribution: 
  Number of LUT Flip Flop pairs used:    193
    Number with an unused Flip Flop:     110  out of    193    56%  
-   Number with an unused LUT:            32  out of    193    16%  
-   Number of fully used LUT-FF pairs:    51  out of    193    26%  
+   Number with an unused LUT:            31  out of    193    16%  
+   Number of fully used LUT-FF pairs:    52  out of    193    26%  
    Number of unique control sets:         3
 
 IO Utilization: 
@@ -309,7 +309,7 @@ Speed Grade: -3
 
    Minimum period: 4.307ns (Maximum Frequency: 232.199MHz)
    Minimum input arrival time before clock: 4.765ns
-   Maximum output required time after clock: 8.065ns
+   Maximum output required time after clock: 8.095ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -361,9 +361,9 @@ Offset:              4.765ns (Levels of Logic = 2)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'Clk'
-  Total number of paths / destination ports: 7717 / 4
+  Total number of paths / destination ports: 7850 / 5
 -------------------------------------------------------------------------
-Offset:              8.065ns (Levels of Logic = 35)
+Offset:              8.095ns (Levels of Logic = 35)
   Source:            Echo_time_0 (FF)
   Destination:       LED<3> (PAD)
   Source Clock:      Clk rising
@@ -403,14 +403,14 @@ Offset:              8.065ns (Levels of Logic = 35)
      MUXCY:CI->O           1   0.019   0.000  Msub_Fee_Generator.Vehicle_Height_cy<26> (Msub_Fee_Generator.Vehicle_Height_cy<26>)
      MUXCY:CI->O           1   0.019   0.000  Msub_Fee_Generator.Vehicle_Height_cy<27> (Msub_Fee_Generator.Vehicle_Height_cy<27>)
      MUXCY:CI->O           1   0.019   0.000  Msub_Fee_Generator.Vehicle_Height_cy<28> (Msub_Fee_Generator.Vehicle_Height_cy<28>)
-     XORCY:CI->O           5   0.180   1.059  Msub_Fee_Generator.Vehicle_Height_xor<29> (Fee_Generator.Vehicle_Height<29>)
+     XORCY:CI->O           6   0.180   1.089  Msub_Fee_Generator.Vehicle_Height_xor<29> (Fee_Generator.Vehicle_Height<29>)
      LUT5:I0->O            0   0.203   0.000  Mcompar_GND_6_o_GND_6_o_LessThan_16_o_lutdi4 (Mcompar_GND_6_o_GND_6_o_LessThan_16_o_lutdi4)
      MUXCY:DI->O           3   0.339   0.995  Mcompar_GND_6_o_GND_6_o_LessThan_16_o_cy<4> (Mcompar_GND_6_o_GND_6_o_LessThan_16_o_cy<4>)
-     LUT6:I1->O            1   0.203   0.579  Mmux_n003531 (LED_3_OBUF)
+     LUT6:I1->O            1   0.203   0.579  Mmux_LED41 (LED_3_OBUF)
      OBUF:I->O                 2.571          LED_3_OBUF (LED<3>)
     ----------------------------------------
-    Total                      8.065ns (4.853ns logic, 3.212ns route)
-                                       (60.2% logic, 39.8% route)
+    Total                      8.095ns (4.853ns logic, 3.242ns route)
+                                       (60.0% logic, 40.0% route)
 
 =========================================================================
 
@@ -429,7 +429,7 @@ Clk            |    4.307|         |         |         |
 
 
 Total REAL time to Xst completion: 7.00 secs
-Total CPU time to Xst completion: 7.29 secs
+Total CPU time to Xst completion: 6.54 secs
  
 --> 
 

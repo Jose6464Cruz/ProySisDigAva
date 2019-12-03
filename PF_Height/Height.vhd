@@ -33,17 +33,17 @@ end Height;
 architecture Height_Arch of Height is
 
   -- Signals used by the Frequency divider
-  constant Sample_Count   : integer := 100000;   -- Maximum count to obtain desired outputfreq
+  constant Sample_Count   : integer := 100_000;   -- Maximum count to obtain desired outputfreq
   constant TrigOn			  : integer := 0;
-  constant TrigDelta		  : integer := 1000;
+  constant TrigDelta		  : integer := 1000;		  -- 10 Microseconds Trigger wave
   signal   Count	  		  : integer range 0 to Sample_Count; -- Counter
-  signal   CountE         : integer; -- Echo Counter 
-  signal	  Echo_time      : integer;
+  signal   CountE         : integer range 0 to Sample_Count; -- Echo Counter 
+  signal	  Echo_time      : integer range 0 to Sample_Count; -- Signal to Fee
   
   -- Constants used by the Fee Generator
   constant Total_Height : integer := 120000;				-- 20 cm is the distance from the sensor to the ground
   -- Signal used by the Fee Generator
-  signal	  Fee 			: integer;	-- Fee goes from 0 to 200 Pesos
+  signal	  Fee 			: STD_LOGIC_VECTOR(3 downto 0);	-- Fee goes from 0 to 200 Pesos
   
 begin
   -- Trigger pulse sending time
@@ -84,17 +84,17 @@ begin
   begin
 	Vehicle_Height := Total_Height - Echo_time;	
 	if (Vehicle_Height < 30000) then
-		Fee <= 50;
+		Fee <= "0001";
 	elsif (Vehicle_Height < 60000) then
-		Fee <= 100;
+		Fee <= "0010";
 	elsif (Vehicle_Height < 90000) then
-		Fee <= 150;
+		Fee <= "0100";
 	else
-		Fee <= 200;
+		Fee <= "1000";
 	end if;
 	
-	LED <= CONV_STD_LOGIC_VECTOR(Fee, 4);
-  
+	--LED <= CONV_STD_LOGIC_VECTOR(Fee, 4);
+   LED <= Fee;
   end process Fee_Generator;
   
   
