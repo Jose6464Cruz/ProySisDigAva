@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.13 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.13 secs
  
 --> Reading design: Height.prj
 
@@ -114,7 +114,6 @@ Parsing architecture <Height_Arch> of entity <height>.
 =========================================================================
 
 Elaborating entity <Height> (architecture <Height_Arch>) from library <work>.
-WARNING:HDLCompiler:1127 - "D:\Repositories\ProySisDigAva\PF_Height\Height.vhd" Line 88: Assignment to fee ignored, since the identifier is never used
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -122,27 +121,41 @@ WARNING:HDLCompiler:1127 - "D:\Repositories\ProySisDigAva\PF_Height\Height.vhd" 
 
 Synthesizing Unit <Height>.
     Related source file is "D:\Repositories\ProySisDigAva\PF_Height\Height.vhd".
-WARNING:Xst:647 - Input <Echo> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <Distance.Sent>.
+    Found 32-bit register for signal <CountE>.
+    Found 32-bit register for signal <Echo_time>.
+    Found 17-bit register for signal <Count>.
     Found 1-bit register for signal <Trigger>.
-    Found 11-bit register for signal <Count>.
-    Found 11-bit adder for signal <Count[10]_GND_6_o_add_3_OUT> created at line 67.
+    Found 32-bit adder for signal <CountE[31]_GND_6_o_add_2_OUT> created at line 64.
+    Found 17-bit adder for signal <Count[16]_GND_6_o_add_8_OUT> created at line 75.
+    Found 32-bit subtractor for signal <Fee_Generator.Vehicle_Height> created at line 83.
+    Found 32-bit comparator greater for signal <GND_6_o_GND_6_o_LessThan_15_o> created at line 86
+    Found 32-bit comparator greater for signal <GND_6_o_GND_6_o_LessThan_16_o> created at line 88
+    Found 32-bit comparator greater for signal <GND_6_o_GND_6_o_LessThan_17_o> created at line 90
     Summary:
-	inferred   1 Adder/Subtractor(s).
-	inferred  12 D-type flip-flop(s).
-	inferred   1 Multiplexer(s).
+	inferred   3 Adder/Subtractor(s).
+	inferred  83 D-type flip-flop(s).
+	inferred   3 Comparator(s).
+	inferred   4 Multiplexer(s).
 Unit <Height> synthesized.
 
 =========================================================================
 HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 1
- 11-bit adder                                          : 1
-# Registers                                            : 2
- 1-bit register                                        : 1
- 11-bit register                                       : 1
-# Multiplexers                                         : 1
- 11-bit 2-to-1 multiplexer                             : 1
+# Adders/Subtractors                                   : 3
+ 17-bit adder                                          : 1
+ 32-bit adder                                          : 1
+ 32-bit subtractor                                     : 1
+# Registers                                            : 5
+ 1-bit register                                        : 2
+ 17-bit register                                       : 1
+ 32-bit register                                       : 2
+# Comparators                                          : 3
+ 32-bit comparator greater                             : 3
+# Multiplexers                                         : 4
+ 1-bit 2-to-1 multiplexer                              : 2
+ 8-bit 2-to-1 multiplexer                              : 2
 
 =========================================================================
 
@@ -153,16 +166,25 @@ Macro Statistics
 
 Synthesizing (advanced) Unit <Height>.
 The following registers are absorbed into counter <Count>: 1 register on signal <Count>.
+The following registers are absorbed into counter <CountE>: 1 register on signal <CountE>.
 Unit <Height> synthesized (advanced).
 
 =========================================================================
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# Counters                                             : 1
- 11-bit up counter                                     : 1
-# Registers                                            : 1
- Flip-Flops                                            : 1
+# Adders/Subtractors                                   : 1
+ 32-bit subtractor                                     : 1
+# Counters                                             : 2
+ 17-bit up counter                                     : 1
+ 32-bit up counter                                     : 1
+# Registers                                            : 34
+ Flip-Flops                                            : 34
+# Comparators                                          : 3
+ 32-bit comparator greater                             : 3
+# Multiplexers                                         : 4
+ 1-bit 2-to-1 multiplexer                              : 2
+ 8-bit 2-to-1 multiplexer                              : 2
 
 =========================================================================
 
@@ -174,7 +196,7 @@ Optimizing unit <Height> ...
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block Height, actual ratio is 0.
+Found area constraint ratio of 100 (+ 5) on block Height, actual ratio is 1.
 
 Final Macro Processing ...
 
@@ -182,8 +204,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 12
- Flip-Flops                                            : 12
+# Registers                                            : 83
+ Flip-Flops                                            : 83
 
 =========================================================================
 
@@ -206,20 +228,27 @@ Top Level Output File Name         : Height.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 41
+# BELS                             : 333
 #      GND                         : 1
-#      LUT1                        : 1
-#      LUT2                        : 3
-#      LUT6                        : 15
-#      MUXCY                       : 10
-#      XORCY                       : 11
-# FlipFlops/Latches                : 12
-#      FDC                         : 12
+#      INV                         : 27
+#      LUT1                        : 54
+#      LUT2                        : 1
+#      LUT3                        : 6
+#      LUT4                        : 36
+#      LUT5                        : 25
+#      LUT6                        : 12
+#      MUXCY                       : 93
+#      VCC                         : 1
+#      XORCY                       : 77
+# FlipFlops/Latches                : 83
+#      FD                          : 34
+#      FDE                         : 32
+#      FDR                         : 17
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 2
+# IO Buffers                       : 6
 #      IBUF                        : 1
-#      OBUF                        : 1
+#      OBUF                        : 5
 
 Device utilization summary:
 ---------------------------
@@ -228,20 +257,20 @@ Selected Device : 6slx16csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:              12  out of  18224     0%  
- Number of Slice LUTs:                   19  out of   9112     0%  
-    Number used as Logic:                19  out of   9112     0%  
+ Number of Slice Registers:              83  out of  18224     0%  
+ Number of Slice LUTs:                  161  out of   9112     1%  
+    Number used as Logic:               161  out of   9112     1%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:     19
-   Number with an unused Flip Flop:       7  out of     19    36%  
-   Number with an unused LUT:             0  out of     19     0%  
-   Number of fully used LUT-FF pairs:    12  out of     19    63%  
-   Number of unique control sets:         1
+ Number of LUT Flip Flop pairs used:    193
+   Number with an unused Flip Flop:     110  out of    193    56%  
+   Number with an unused LUT:            32  out of    193    16%  
+   Number of fully used LUT-FF pairs:    51  out of    193    26%  
+   Number of unique control sets:         3
 
 IO Utilization: 
- Number of IOs:                           4
- Number of bonded IOBs:                   3  out of    232     1%  
+ Number of IOs:                           7
+ Number of bonded IOBs:                   7  out of    232     3%  
 
 Specific Feature Utilization:
  Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
@@ -267,7 +296,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-Clk                                | BUFGP                  | 12    |
+Clk                                | BUFGP                  | 83    |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -278,9 +307,9 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 3.830ns (Maximum Frequency: 261.103MHz)
-   Minimum input arrival time before clock: 2.560ns
-   Maximum output required time after clock: 3.634ns
+   Minimum period: 4.307ns (Maximum Frequency: 232.199MHz)
+   Minimum input arrival time before clock: 4.765ns
+   Maximum output required time after clock: 8.065ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -289,75 +318,99 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'Clk'
-  Clock period: 3.830ns (frequency: 261.103MHz)
-  Total number of paths / destination ports: 839 / 12
+  Clock period: 4.307ns (frequency: 232.199MHz)
+  Total number of paths / destination ports: 2239 / 132
 -------------------------------------------------------------------------
-Delay:               3.830ns (Levels of Logic = 13)
-  Source:            Count_9 (FF)
-  Destination:       Count_10 (FF)
+Delay:               4.307ns (Levels of Logic = 2)
+  Source:            Count_16 (FF)
+  Destination:       Echo_time_0 (FF)
   Source Clock:      Clk rising
   Destination Clock: Clk rising
 
-  Data Path: Count_9 to Count_10
+  Data Path: Count_16 to Echo_time_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q              3   0.447   1.015  Count_9 (Count_9)
-     LUT6:I0->O           12   0.203   0.909  _n0017_inv11 (_n0017_inv1)
-     LUT6:I5->O            1   0.205   0.579  PWR_6_o_Count[10]_equal_3_o_inv1 (PWR_6_o_Count[10]_equal_3_o_inv)
-     MUXCY:CI->O           1   0.019   0.000  Mcount_Count_cy<0> (Mcount_Count_cy<0>)
-     MUXCY:CI->O           1   0.019   0.000  Mcount_Count_cy<1> (Mcount_Count_cy<1>)
-     MUXCY:CI->O           1   0.019   0.000  Mcount_Count_cy<2> (Mcount_Count_cy<2>)
-     MUXCY:CI->O           1   0.019   0.000  Mcount_Count_cy<3> (Mcount_Count_cy<3>)
-     MUXCY:CI->O           1   0.019   0.000  Mcount_Count_cy<4> (Mcount_Count_cy<4>)
-     MUXCY:CI->O           1   0.019   0.000  Mcount_Count_cy<5> (Mcount_Count_cy<5>)
-     MUXCY:CI->O           1   0.019   0.000  Mcount_Count_cy<6> (Mcount_Count_cy<6>)
-     MUXCY:CI->O           1   0.019   0.000  Mcount_Count_cy<7> (Mcount_Count_cy<7>)
-     MUXCY:CI->O           1   0.019   0.000  Mcount_Count_cy<8> (Mcount_Count_cy<8>)
-     MUXCY:CI->O           0   0.019   0.000  Mcount_Count_cy<9> (Mcount_Count_cy<9>)
-     XORCY:CI->O           1   0.180   0.000  Mcount_Count_xor<10> (Mcount_Count10)
-     FDC:D                     0.102          Count_10
+     FDR:C->Q              5   0.447   0.943  Count_16 (Count_16)
+     LUT3:I0->O            3   0.205   0.879  _n0063_SW0 (N10)
+     LUT6:I3->O           33   0.205   1.305  Echo_Distance.Sent_AND_2_o1 (Echo_Distance.Sent_AND_2_o)
+     FDE:CE                    0.322          Echo_time_0
     ----------------------------------------
-    Total                      3.830ns (1.327ns logic, 2.503ns route)
-                                       (34.6% logic, 65.4% route)
+    Total                      4.307ns (1.179ns logic, 3.128ns route)
+                                       (27.4% logic, 72.6% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'Clk'
-  Total number of paths / destination ports: 12 / 12
+  Total number of paths / destination ports: 97 / 65
 -------------------------------------------------------------------------
-Offset:              2.560ns (Levels of Logic = 1)
-  Source:            Rst (PAD)
-  Destination:       Count_0 (FF)
+Offset:              4.765ns (Levels of Logic = 2)
+  Source:            Echo (PAD)
+  Destination:       Echo_time_0 (FF)
   Destination Clock: Clk rising
 
-  Data Path: Rst to Count_0
+  Data Path: Echo to Echo_time_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            12   1.222   0.908  Rst_IBUF (Rst_IBUF)
-     FDC:CLR                   0.430          Count_0
+     IBUF:I->O            36   1.222   1.713  Echo_IBUF (Echo_IBUF)
+     LUT6:I0->O           33   0.203   1.305  Echo_Distance.Sent_AND_2_o1 (Echo_Distance.Sent_AND_2_o)
+     FDE:CE                    0.322          Echo_time_0
     ----------------------------------------
-    Total                      2.560ns (1.652ns logic, 0.908ns route)
-                                       (64.5% logic, 35.5% route)
+    Total                      4.765ns (1.747ns logic, 3.018ns route)
+                                       (36.7% logic, 63.3% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'Clk'
-  Total number of paths / destination ports: 1 / 1
+  Total number of paths / destination ports: 7717 / 4
 -------------------------------------------------------------------------
-Offset:              3.634ns (Levels of Logic = 1)
-  Source:            Trigger (FF)
-  Destination:       Trigger (PAD)
+Offset:              8.065ns (Levels of Logic = 35)
+  Source:            Echo_time_0 (FF)
+  Destination:       LED<3> (PAD)
   Source Clock:      Clk rising
 
-  Data Path: Trigger to Trigger
+  Data Path: Echo_time_0 to LED<3>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q              2   0.447   0.616  Trigger (Trigger_OBUF)
-     OBUF:I->O                 2.571          Trigger_OBUF (Trigger)
+     FDE:C->Q              1   0.447   0.579  Echo_time_0 (Echo_time_0)
+     INV:I->O              1   0.206   0.000  Msub_Fee_Generator.Vehicle_Height_lut<0>_INV_0 (Msub_Fee_Generator.Vehicle_Height_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  Msub_Fee_Generator.Vehicle_Height_cy<0> (Msub_Fee_Generator.Vehicle_Height_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  Msub_Fee_Generator.Vehicle_Height_cy<1> (Msub_Fee_Generator.Vehicle_Height_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  Msub_Fee_Generator.Vehicle_Height_cy<2> (Msub_Fee_Generator.Vehicle_Height_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  Msub_Fee_Generator.Vehicle_Height_cy<3> (Msub_Fee_Generator.Vehicle_Height_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  Msub_Fee_Generator.Vehicle_Height_cy<4> (Msub_Fee_Generator.Vehicle_Height_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  Msub_Fee_Generator.Vehicle_Height_cy<5> (Msub_Fee_Generator.Vehicle_Height_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  Msub_Fee_Generator.Vehicle_Height_cy<6> (Msub_Fee_Generator.Vehicle_Height_cy<6>)
+     MUXCY:CI->O           1   0.019   0.000  Msub_Fee_Generator.Vehicle_Height_cy<7> (Msub_Fee_Generator.Vehicle_Height_cy<7>)
+     MUXCY:CI->O           1   0.019   0.000  Msub_Fee_Generator.Vehicle_Height_cy<8> (Msub_Fee_Generator.Vehicle_Height_cy<8>)
+     MUXCY:CI->O           1   0.019   0.000  Msub_Fee_Generator.Vehicle_Height_cy<9> (Msub_Fee_Generator.Vehicle_Height_cy<9>)
+     MUXCY:CI->O           1   0.019   0.000  Msub_Fee_Generator.Vehicle_Height_cy<10> (Msub_Fee_Generator.Vehicle_Height_cy<10>)
+     MUXCY:CI->O           1   0.019   0.000  Msub_Fee_Generator.Vehicle_Height_cy<11> (Msub_Fee_Generator.Vehicle_Height_cy<11>)
+     MUXCY:CI->O           1   0.019   0.000  Msub_Fee_Generator.Vehicle_Height_cy<12> (Msub_Fee_Generator.Vehicle_Height_cy<12>)
+     MUXCY:CI->O           1   0.019   0.000  Msub_Fee_Generator.Vehicle_Height_cy<13> (Msub_Fee_Generator.Vehicle_Height_cy<13>)
+     MUXCY:CI->O           1   0.019   0.000  Msub_Fee_Generator.Vehicle_Height_cy<14> (Msub_Fee_Generator.Vehicle_Height_cy<14>)
+     MUXCY:CI->O           1   0.019   0.000  Msub_Fee_Generator.Vehicle_Height_cy<15> (Msub_Fee_Generator.Vehicle_Height_cy<15>)
+     MUXCY:CI->O           1   0.019   0.000  Msub_Fee_Generator.Vehicle_Height_cy<16> (Msub_Fee_Generator.Vehicle_Height_cy<16>)
+     MUXCY:CI->O           1   0.019   0.000  Msub_Fee_Generator.Vehicle_Height_cy<17> (Msub_Fee_Generator.Vehicle_Height_cy<17>)
+     MUXCY:CI->O           1   0.019   0.000  Msub_Fee_Generator.Vehicle_Height_cy<18> (Msub_Fee_Generator.Vehicle_Height_cy<18>)
+     MUXCY:CI->O           1   0.019   0.000  Msub_Fee_Generator.Vehicle_Height_cy<19> (Msub_Fee_Generator.Vehicle_Height_cy<19>)
+     MUXCY:CI->O           1   0.019   0.000  Msub_Fee_Generator.Vehicle_Height_cy<20> (Msub_Fee_Generator.Vehicle_Height_cy<20>)
+     MUXCY:CI->O           1   0.019   0.000  Msub_Fee_Generator.Vehicle_Height_cy<21> (Msub_Fee_Generator.Vehicle_Height_cy<21>)
+     MUXCY:CI->O           1   0.019   0.000  Msub_Fee_Generator.Vehicle_Height_cy<22> (Msub_Fee_Generator.Vehicle_Height_cy<22>)
+     MUXCY:CI->O           1   0.019   0.000  Msub_Fee_Generator.Vehicle_Height_cy<23> (Msub_Fee_Generator.Vehicle_Height_cy<23>)
+     MUXCY:CI->O           1   0.019   0.000  Msub_Fee_Generator.Vehicle_Height_cy<24> (Msub_Fee_Generator.Vehicle_Height_cy<24>)
+     MUXCY:CI->O           1   0.019   0.000  Msub_Fee_Generator.Vehicle_Height_cy<25> (Msub_Fee_Generator.Vehicle_Height_cy<25>)
+     MUXCY:CI->O           1   0.019   0.000  Msub_Fee_Generator.Vehicle_Height_cy<26> (Msub_Fee_Generator.Vehicle_Height_cy<26>)
+     MUXCY:CI->O           1   0.019   0.000  Msub_Fee_Generator.Vehicle_Height_cy<27> (Msub_Fee_Generator.Vehicle_Height_cy<27>)
+     MUXCY:CI->O           1   0.019   0.000  Msub_Fee_Generator.Vehicle_Height_cy<28> (Msub_Fee_Generator.Vehicle_Height_cy<28>)
+     XORCY:CI->O           5   0.180   1.059  Msub_Fee_Generator.Vehicle_Height_xor<29> (Fee_Generator.Vehicle_Height<29>)
+     LUT5:I0->O            0   0.203   0.000  Mcompar_GND_6_o_GND_6_o_LessThan_16_o_lutdi4 (Mcompar_GND_6_o_GND_6_o_LessThan_16_o_lutdi4)
+     MUXCY:DI->O           3   0.339   0.995  Mcompar_GND_6_o_GND_6_o_LessThan_16_o_cy<4> (Mcompar_GND_6_o_GND_6_o_LessThan_16_o_cy<4>)
+     LUT6:I1->O            1   0.203   0.579  Mmux_n003531 (LED_3_OBUF)
+     OBUF:I->O                 2.571          LED_3_OBUF (LED<3>)
     ----------------------------------------
-    Total                      3.634ns (3.018ns logic, 0.616ns route)
-                                       (83.0% logic, 17.0% route)
+    Total                      8.065ns (4.853ns logic, 3.212ns route)
+                                       (60.2% logic, 39.8% route)
 
 =========================================================================
 
@@ -369,7 +422,7 @@ Clock to Setup on destination clock Clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-Clk            |    3.830|         |         |         |
+Clk            |    4.307|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
@@ -383,6 +436,6 @@ Total CPU time to Xst completion: 7.29 secs
 Total memory usage is 4510768 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    2 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

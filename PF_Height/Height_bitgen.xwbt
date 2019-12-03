@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\Repositories\ProySisDigAva\PF_Height\Height.ncd
+OUTFILE=D:\Repositories\ProySisDigAva\PF_Height\Height.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=D:\Repositories\ProySisDigAva\PF_Height
+LICENSE=WebPack
+USER_INFO=176089449_1777494614_0_810

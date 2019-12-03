@@ -21,86 +21,83 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;
+use IEEE.std_logic_arith.all;
 
 entity Height is
     Port (Clk     : in  STD_LOGIC;
-          Rst     : in  STD_LOGIC;
 			 Echo	   : in  STD_LOGIC;
+			 LED		: out STD_LOGIC_VECTOR(3 downto 0);
 			 Trigger : out STD_LOGIC);
 end Height;
 
 architecture Height_Arch of Height is
 
   -- Signals used by the Frequency divider
-  constant Sample_Count   : integer := 2000;   -- Maximum count to obtain desired outputfreq
+  constant Sample_Count   : integer := 100000;   -- Maximum count to obtain desired outputfreq
   constant TrigOn			  : integer := 0;
   constant TrigDelta		  : integer := 1000;
-  signal   Count	  		  : integer range 0 to Sample_Count; -- Define the counter
-  signal   CountE         : integer range 0 to Sample_Count; -- Define the counter 
-  signal	  Echo_time      : integer range 0 to Sample_Count;
+  signal   Count	  		  : integer range 0 to Sample_Count; -- Counter
+  signal   CountE         : integer; -- Echo Counter 
+  signal	  Echo_time      : integer;
   
   -- Constants used by the Fee Generator
   constant Total_Height : integer := 120000;				-- 20 cm is the distance from the sensor to the ground
   -- Signal used by the Fee Generator
-  signal	  Fee 			: integer range 0 to 200;	-- Fee goes from 0 to 200 Pesos
+  signal	  Fee 			: integer;	-- Fee goes from 0 to 200 Pesos
   
 begin
   -- Trigger pulse sending time
-  Trigg_pulse: process(Rst,Clk)
+  Distance: process(Clk)
+  variable Sent : std_logic := '1';
   begin
-    if Rst = '1' then
-	   Count 	<= 0;
-		Trigger  <= '0';
-		
-	 elsif (rising_edge(Clk)) then
+	if (rising_edge(Clk)) then
 	   -- Trigger pulse
-		if Count = TrigOn then
+		if (Count = TrigOn) then
 			Trigger <= '1';
 		elsif Count = TrigOn + TrigDelta then
 			Trigger <= '0';
+			Sent 	  := '1';
 		end if;
 		
-		-- Reset counter
-		if Count = Sample_Count-1 then
+		-- Echo receive pulse
+		if (Echo = '1') then
+			CountE <= CountE + 1;
+		elsif (Echo = '0' and Sent = '1') then
+			Echo_time <= CountE;
+			CountE <= 0;
+			Sent 	 := '0';
+		end if;
+		  
+		-- Resets counter
+		if (Count = Sample_Count-1) then
         Count <= 0;
       else		  
 	     Count <= Count + 1;
 		end if;
 		
 	end if;
-  end process Trigg_pulse;
-  
-  -- Echo pulse receiving time
-  Echo_pulse: process(Clk)
-  begin
-	if (rising_edge(Clk)) then
-		-- Echo receive
-		if Echo = '1' then
-			CountE <= CountE + 1;
-		elsif (Echo = '0') then
-			Echo_time <= CountE;
-			CountE <= 0;
-		end if;
-	end if;
-  end process Echo_pulse;
+  end process Distance;
   
   -- Fee Generator
-  Fee_Generator: process(Echo_time, CountE)
+  Fee_Generator: process(Echo_time, Fee)
   variable Vehicle_Height : integer := 0;
   begin
-	if CountE = 0 then
-		Vehicle_Height := Total_Height - Echo_time;	
-		if (Vehicle_Height < 30000) then
-			Fee <= 50;
-		elsif (Vehicle_Height < 60000) then
-			Fee <= 100;
-		elsif (Vehicle_Height < 90000) then
-			Fee <= 150;
-		else
-			Fee <= 200;
-		end if;
-	end if;	
+	Vehicle_Height := Total_Height - Echo_time;	
+	if (Vehicle_Height < 30000) then
+		Fee <= 50;
+	elsif (Vehicle_Height < 60000) then
+		Fee <= 100;
+	elsif (Vehicle_Height < 90000) then
+		Fee <= 150;
+	else
+		Fee <= 200;
+	end if;
+	
+	LED <= CONV_STD_LOGIC_VECTOR(Fee, 4);
+  
   end process Fee_Generator;
+  
+  
   
 end Height_Arch;
 

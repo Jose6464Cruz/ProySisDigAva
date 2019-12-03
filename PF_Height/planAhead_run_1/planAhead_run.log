@@ -1,0 +1,96 @@
+
+****** PlanAhead v14.7
+  **** Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+    ** Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
+
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Common 17-86] Your PlanAhead license expires in -1187 day(s)
+INFO: [Device 21-36] Loading parts and site information from D:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [D:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [D:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source D:/Repositories/ProySisDigAva/PF_Height/pa.fromNetlist.tcl
+# create_project -name PF_Height -dir "D:/Repositories/ProySisDigAva/PF_Height/planAhead_run_1" -part xc6slx16csg324-3
+# set_property design_mode GateLvl [get_property srcset [current_run -impl]]
+# set_property edif_top_file "D:/Repositories/ProySisDigAva/PF_Height/Height.ngc" [ get_property srcset [ current_run ] ]
+# add_files -norecurse { {D:/Repositories/ProySisDigAva/PF_Height} }
+# set_param project.pinAheadLayout  yes
+# set_property target_constrs_file "Height.ucf" [current_fileset -constrset]
+Adding file 'D:/Repositories/ProySisDigAva/PF_Height/Height.ucf' to fileset 'constrs_1'
+# add_files [list {Height.ucf}] -fileset [get_property constrset [current_run]]
+# link_design
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+Design is defaulting to project part: xc6slx16csg324-3
+Release 14.7 - ngc2edif P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Release 14.7 - ngc2edif P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design Height.ngc ...
+WARNING:NetListWriters:298 - No output is written to Height.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus Mcount_Count_lut<10 : 0> on block Height
+   is not reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file Height.edif ...
+ngc2edif: Total memory usage is 79148 kilobytes
+
+Parsing EDIF File [./planAhead_run_1/PF_Height.data/cache/Height_ngc_zx.edif]
+Finished Parsing EDIF File [./planAhead_run_1/PF_Height.data/cache/Height_ngc_zx.edif]
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Loading clock regions from D:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx16/ClockRegion.xml
+Loading clock buffers from D:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx16/ClockBuffers.xml
+Loading package pin functions from D:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/PinFunctions.xml...
+Loading package from D:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx16/csg324/Package.xml
+Loading io standards from D:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/IOStandards.xml
+Loading device configuration modes from D:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/ConfigModes.xml
+Loading list of drcs for the architecture : D:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/drc.xml
+Parsing UCF File [D:/Repositories/ProySisDigAva/PF_Height/Height.ucf]
+Finished Parsing UCF File [D:/Repositories/ProySisDigAva/PF_Height/Height.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  BUFGP => BUFGP (IBUF, BUFG): 1 instances
+
+Phase 0 | Netlist Checksum: fa935d15
+link_design: Time (s): elapsed = 00:00:13 . Memory (MB): peak = 480.902 ; gain = 89.656
+startgroup
+set_property package_pin V10 [get_ports Clk]
+endgroup
+startgroup
+set_property package_pin T12 [get_ports Echo]
+endgroup
+startgroup
+set_property package_pin V12 [get_ports Rst]
+endgroup
+startgroup
+set_property package_pin B8 [get_ports Rst]
+endgroup
+startgroup
+set_property package_pin V12 [get_ports Trigger]
+endgroup
+set_property package_pin "" [get_ports [list  {LED[0]}]]
+startgroup
+set_property package_pin U16 [get_ports {LED[3]}]
+endgroup
+startgroup
+set_property package_pin V16 [get_ports {LED[2]}]
+endgroup
+startgroup
+set_property package_pin U15 [get_ports {LED[1]}]
+endgroup
+startgroup
+set_property package_pin V15 [get_ports {LED[0]}]
+endgroup
+startgroup
+set_property package_pin U15 [get_ports {LED[1]}]
+endgroup
+save_constraints
+exit
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Sun Dec 01 20:55:51 2019...
+INFO: [Common 17-83] Releasing license: PlanAhead

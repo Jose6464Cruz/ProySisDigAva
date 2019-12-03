@@ -22,19 +22,56 @@
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="PF_Height.xise"/>
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="Height.bld"/>
     <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="Height.cmd_log"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="Height.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="Height.ncd" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="Height.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="Height.ngd"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="Height.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="Height.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="Height.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="Height.pcf" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Height.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="Height.ptwx"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="Height.stx"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="Height.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="Height.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="Height.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="Height.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="Height.ut" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="Height.xpi"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="Height.xst"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="Height_envsettings.html"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="Height_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="Height_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="Height_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="Height_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="Height_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Height_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Height_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="Height_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="Height_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Height_par.xrpt"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="Height_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="Height_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="Height_usage.xml"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Height_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="height.bgn" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="height.bit" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="height.drc" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="planAhead_run_1"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="usage_statistics_webtalk.html"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
   </files>
 
@@ -67,10 +104,11 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1575163813" xil_pn:in_ck="3488286314529193" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="737875157762313179" xil_pn:start_ts="1575163804">
+    <transform xil_pn:end_ts="1575331685" xil_pn:in_ck="3488286314529193" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="737875157762313179" xil_pn:start_ts="1575331675">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Height.lso"/>
       <outfile xil_pn:name="Height.ngc"/>
       <outfile xil_pn:name="Height.ngr"/>
@@ -83,9 +121,64 @@
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
     </transform>
-    <transform xil_pn:end_ts="1575060744" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-8417215606437665814" xil_pn:start_ts="1575060744">
+    <transform xil_pn:end_ts="1575331685" xil_pn:in_ck="3488286314527941" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-8417215606437665814" xil_pn:start_ts="1575331685">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1575331691" xil_pn:in_ck="6064029638390089476" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="3769104183243218733" xil_pn:start_ts="1575331685">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Height.bld"/>
+      <outfile xil_pn:name="Height.ngd"/>
+      <outfile xil_pn:name="Height_ngdbuild.xrpt"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1575331700" xil_pn:in_ck="6065561217375353925" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="1463976855095865663" xil_pn:start_ts="1575331691">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Height.pcf"/>
+      <outfile xil_pn:name="Height_map.map"/>
+      <outfile xil_pn:name="Height_map.mrp"/>
+      <outfile xil_pn:name="Height_map.ncd"/>
+      <outfile xil_pn:name="Height_map.ngm"/>
+      <outfile xil_pn:name="Height_map.xrpt"/>
+      <outfile xil_pn:name="Height_summary.xml"/>
+      <outfile xil_pn:name="Height_usage.xml"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1575331714" xil_pn:in_ck="-7658629821827194850" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-1178055513630676559" xil_pn:start_ts="1575331700">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Height.ncd"/>
+      <outfile xil_pn:name="Height.pad"/>
+      <outfile xil_pn:name="Height.par"/>
+      <outfile xil_pn:name="Height.ptwx"/>
+      <outfile xil_pn:name="Height.unroutes"/>
+      <outfile xil_pn:name="Height.xpi"/>
+      <outfile xil_pn:name="Height_pad.csv"/>
+      <outfile xil_pn:name="Height_pad.txt"/>
+      <outfile xil_pn:name="Height_par.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1575331727" xil_pn:in_ck="3488286314520316" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="5341574683187206424" xil_pn:start_ts="1575331714">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Height.ut"/>
+      <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+      <outfile xil_pn:name="height.bgn"/>
+      <outfile xil_pn:name="height.bit"/>
+      <outfile xil_pn:name="height.drc"/>
+      <outfile xil_pn:name="usage_statistics_webtalk.html"/>
+      <outfile xil_pn:name="webtalk.log"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1575331714" xil_pn:in_ck="5863392791320446657" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1575331709">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Height.twr"/>
+      <outfile xil_pn:name="Height.twx"/>
+      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
     </transform>
   </transforms>
 

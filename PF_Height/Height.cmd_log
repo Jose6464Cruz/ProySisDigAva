@@ -26,3 +26,98 @@ xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/PF_Height/Height.xst" -ofn
 xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/PF_Height/Height.xst" -ofn "D:/Repositories/ProySisDigAva/PF_Height/Height.syr" 
 xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/PF_Height/Height.xst" -ofn "D:/Repositories/ProySisDigAva/PF_Height/Height.syr" 
 xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/PF_Height/Height.xst" -ofn "D:/Repositories/ProySisDigAva/PF_Height/Height.syr" 
+xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/PF_Height/Height.xst" -ofn "D:/Repositories/ProySisDigAva/PF_Height/Height.syr" 
+xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/PF_Height/Height.xst" -ofn "D:/Repositories/ProySisDigAva/PF_Height/Height.syr" 
+xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/PF_Height/Height.xst" -ofn "D:/Repositories/ProySisDigAva/PF_Height/Height.syr" 
+xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/PF_Height/Height.xst" -ofn "D:/Repositories/ProySisDigAva/PF_Height/Height.syr" 
+xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/PF_Height/Height.xst" -ofn "D:/Repositories/ProySisDigAva/PF_Height/Height.syr" 
+xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/PF_Height/Height.xst" -ofn "D:/Repositories/ProySisDigAva/PF_Height/Height.syr" 
+xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/PF_Height/Height.xst" -ofn "D:/Repositories/ProySisDigAva/PF_Height/Height.syr" 
+xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/PF_Height/Height.xst" -ofn "D:/Repositories/ProySisDigAva/PF_Height/Height.syr" 
+xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/PF_Height/Height.xst" -ofn "D:/Repositories/ProySisDigAva/PF_Height/Height.syr" 
+xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/PF_Height/Height.xst" -ofn "D:/Repositories/ProySisDigAva/PF_Height/Height.syr" 
+xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/PF_Height/Height.xst" -ofn "D:/Repositories/ProySisDigAva/PF_Height/Height.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Height.ucf -p xc6slx16-csg324-3 Height.ngc Height.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Height_map.ncd Height.ngd Height.pcf 
+par -w -intstyle ise -ol high -mt off Height_map.ncd Height.ncd Height.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Height.twx Height.ncd -o Height.twr Height.pcf -ucf Height.ucf 
+bitgen -intstyle ise -f Height.ut Height.ncd 
+xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/PF_Height/Height.xst" -ofn "D:/Repositories/ProySisDigAva/PF_Height/Height.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Height.ucf -p xc6slx16-csg324-3 Height.ngc Height.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Height_map.ncd Height.ngd Height.pcf 
+par -w -intstyle ise -ol high -mt off Height_map.ncd Height.ncd Height.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Height.twx Height.ncd -o Height.twr Height.pcf -ucf Height.ucf 
+bitgen -intstyle ise -f Height.ut Height.ncd 
+xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/PF_Height/Height.xst" -ofn "D:/Repositories/ProySisDigAva/PF_Height/Height.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Height.ucf -p xc6slx16-csg324-3 Height.ngc Height.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Height_map.ncd Height.ngd Height.pcf 
+par -w -intstyle ise -ol high -mt off Height_map.ncd Height.ncd Height.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Height.twx Height.ncd -o Height.twr Height.pcf -ucf Height.ucf 
+bitgen -intstyle ise -f Height.ut Height.ncd 
+xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/PF_Height/Height.xst" -ofn "D:/Repositories/ProySisDigAva/PF_Height/Height.syr" 
+xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/PF_Height/Height.xst" -ofn "D:/Repositories/ProySisDigAva/PF_Height/Height.syr" 
+xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/PF_Height/Height.xst" -ofn "D:/Repositories/ProySisDigAva/PF_Height/Height.syr" 
+xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/PF_Height/Height.xst" -ofn "D:/Repositories/ProySisDigAva/PF_Height/Height.syr" 
+xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/PF_Height/Height.xst" -ofn "D:/Repositories/ProySisDigAva/PF_Height/Height.syr" 
+xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/PF_Height/Height.xst" -ofn "D:/Repositories/ProySisDigAva/PF_Height/Height.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Height.ucf -p xc6slx16-csg324-3 Height.ngc Height.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Height_map.ncd Height.ngd Height.pcf 
+par -w -intstyle ise -ol high -mt off Height_map.ncd Height.ncd Height.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Height.twx Height.ncd -o Height.twr Height.pcf -ucf Height.ucf 
+bitgen -intstyle ise -f Height.ut Height.ncd 
+xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/PF_Height/Height.xst" -ofn "D:/Repositories/ProySisDigAva/PF_Height/Height.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Height.ucf -p xc6slx16-csg324-3 Height.ngc Height.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Height_map.ncd Height.ngd Height.pcf 
+par -w -intstyle ise -ol high -mt off Height_map.ncd Height.ncd Height.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Height.twx Height.ncd -o Height.twr Height.pcf -ucf Height.ucf 
+xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/PF_Height/Height.xst" -ofn "D:/Repositories/ProySisDigAva/PF_Height/Height.syr" 
+xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/PF_Height/Height.xst" -ofn "D:/Repositories/ProySisDigAva/PF_Height/Height.syr" 
+xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/PF_Height/Height.xst" -ofn "D:/Repositories/ProySisDigAva/PF_Height/Height.syr" 
+xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/PF_Height/Height.xst" -ofn "D:/Repositories/ProySisDigAva/PF_Height/Height.syr" 
+xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/PF_Height/Height.xst" -ofn "D:/Repositories/ProySisDigAva/PF_Height/Height.syr" 
+xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/PF_Height/Height.xst" -ofn "D:/Repositories/ProySisDigAva/PF_Height/Height.syr" 
+xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/PF_Height/Height.xst" -ofn "D:/Repositories/ProySisDigAva/PF_Height/Height.syr" 
+xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/PF_Height/Height.xst" -ofn "D:/Repositories/ProySisDigAva/PF_Height/Height.syr" 
+xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/PF_Height/Height.xst" -ofn "D:/Repositories/ProySisDigAva/PF_Height/Height.syr" 
+xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/PF_Height/Height.xst" -ofn "D:/Repositories/ProySisDigAva/PF_Height/Height.syr" 
+xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/PF_Height/Height.xst" -ofn "D:/Repositories/ProySisDigAva/PF_Height/Height.syr" 
+xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/PF_Height/Height.xst" -ofn "D:/Repositories/ProySisDigAva/PF_Height/Height.syr" 
+xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/PF_Height/Height.xst" -ofn "D:/Repositories/ProySisDigAva/PF_Height/Height.syr" 
+xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/PF_Height/Height.xst" -ofn "D:/Repositories/ProySisDigAva/PF_Height/Height.syr" 
+xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/PF_Height/Height.xst" -ofn "D:/Repositories/ProySisDigAva/PF_Height/Height.syr" 
+xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/PF_Height/Height.xst" -ofn "D:/Repositories/ProySisDigAva/PF_Height/Height.syr" 
+xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/PF_Height/Height.xst" -ofn "D:/Repositories/ProySisDigAva/PF_Height/Height.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Height.ucf -p xc6slx16-csg324-3 Height.ngc Height.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Height_map.ncd Height.ngd Height.pcf 
+par -w -intstyle ise -ol high -mt off Height_map.ncd Height.ncd Height.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Height.twx Height.ncd -o Height.twr Height.pcf -ucf Height.ucf 
+xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/PF_Height/Height.xst" -ofn "D:/Repositories/ProySisDigAva/PF_Height/Height.syr" 
+xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/PF_Height/Height.xst" -ofn "D:/Repositories/ProySisDigAva/PF_Height/Height.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Height.ucf -p xc6slx16-csg324-3 Height.ngc Height.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Height_map.ncd Height.ngd Height.pcf 
+par -w -intstyle ise -ol high -mt off Height_map.ncd Height.ncd Height.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Height.twx Height.ncd -o Height.twr Height.pcf -ucf Height.ucf 
+xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/PF_Height/Height.xst" -ofn "D:/Repositories/ProySisDigAva/PF_Height/Height.syr" 
+xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/PF_Height/Height.xst" -ofn "D:/Repositories/ProySisDigAva/PF_Height/Height.syr" 
+xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/PF_Height/Height.xst" -ofn "D:/Repositories/ProySisDigAva/PF_Height/Height.syr" 
+xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/PF_Height/Height.xst" -ofn "D:/Repositories/ProySisDigAva/PF_Height/Height.syr" 
+xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/PF_Height/Height.xst" -ofn "D:/Repositories/ProySisDigAva/PF_Height/Height.syr" 
+xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/PF_Height/Height.xst" -ofn "D:/Repositories/ProySisDigAva/PF_Height/Height.syr" 
+xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/PF_Height/Height.xst" -ofn "D:/Repositories/ProySisDigAva/PF_Height/Height.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Height.ucf -p xc6slx16-csg324-3 Height.ngc Height.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Height.ucf -p xc6slx16-csg324-3 Height.ngc Height.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Height_map.ncd Height.ngd Height.pcf 
+par -w -intstyle ise -ol high -mt off Height_map.ncd Height.ncd Height.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Height.twx Height.ncd -o Height.twr Height.pcf -ucf Height.ucf 
+xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/PF_Height/Height.xst" -ofn "D:/Repositories/ProySisDigAva/PF_Height/Height.syr" 
+xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/PF_Height/Height.xst" -ofn "D:/Repositories/ProySisDigAva/PF_Height/Height.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Height.ucf -p xc6slx16-csg324-3 Height.ngc Height.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Height_map.ncd Height.ngd Height.pcf 
+par -w -intstyle ise -ol high -mt off Height_map.ncd Height.ncd Height.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Height.twx Height.ncd -o Height.twr Height.pcf -ucf Height.ucf 
+xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/PF_Height/Height.xst" -ofn "D:/Repositories/ProySisDigAva/PF_Height/Height.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Height.ucf -p xc6slx16-csg324-3 Height.ngc Height.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Height_map.ncd Height.ngd Height.pcf 
+par -w -intstyle ise -ol high -mt off Height_map.ncd Height.ncd Height.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Height.twx Height.ncd -o Height.twr Height.pcf -ucf Height.ucf 
+bitgen -intstyle ise -f Height.ut Height.ncd 
