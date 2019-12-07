@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.12 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Reading design: Height.prj
 
@@ -122,19 +122,19 @@ Elaborating entity <Height> (architecture <Height_Arch>) from library <work>.
 Synthesizing Unit <Height>.
     Related source file is "D:\Repositories\ProySisDigAva\PF_Height\Height.vhd".
     Found 1-bit register for signal <Distance.Sent>.
-    Found 32-bit register for signal <CountE>.
-    Found 32-bit register for signal <Echo_time>.
+    Found 17-bit register for signal <CountE>.
+    Found 17-bit register for signal <Echo_time>.
     Found 17-bit register for signal <Count>.
     Found 1-bit register for signal <Trigger>.
-    Found 32-bit adder for signal <CountE[31]_GND_6_o_add_2_OUT> created at line 64.
-    Found 17-bit adder for signal <Count[16]_GND_6_o_add_8_OUT> created at line 75.
-    Found 32-bit subtractor for signal <Fee_Generator.Vehicle_Height> created at line 83.
-    Found 32-bit comparator greater for signal <GND_6_o_GND_6_o_LessThan_15_o> created at line 86
-    Found 32-bit comparator greater for signal <GND_6_o_GND_6_o_LessThan_16_o> created at line 88
-    Found 32-bit comparator greater for signal <GND_6_o_GND_6_o_LessThan_17_o> created at line 90
+    Found 18-bit subtractor for signal <n0044> created at line 86.
+    Found 17-bit adder for signal <CountE[16]_GND_6_o_add_2_OUT> created at line 65.
+    Found 17-bit adder for signal <Count[16]_GND_6_o_add_8_OUT> created at line 74.
+    Found 18-bit comparator greater for signal <GND_6_o_GND_6_o_LessThan_16_o> created at line 87
+    Found 18-bit comparator greater for signal <GND_6_o_GND_6_o_LessThan_17_o> created at line 89
+    Found 18-bit comparator greater for signal <GND_6_o_GND_6_o_LessThan_18_o> created at line 91
     Summary:
 	inferred   3 Adder/Subtractor(s).
-	inferred  83 D-type flip-flop(s).
+	inferred  53 D-type flip-flop(s).
 	inferred   3 Comparator(s).
 	inferred   4 Multiplexer(s).
 Unit <Height> synthesized.
@@ -144,15 +144,13 @@ HDL Synthesis Report
 
 Macro Statistics
 # Adders/Subtractors                                   : 3
- 17-bit adder                                          : 1
- 32-bit adder                                          : 1
- 32-bit subtractor                                     : 1
+ 17-bit adder                                          : 2
+ 18-bit subtractor                                     : 1
 # Registers                                            : 5
  1-bit register                                        : 2
- 17-bit register                                       : 1
- 32-bit register                                       : 2
+ 17-bit register                                       : 3
 # Comparators                                          : 3
- 32-bit comparator greater                             : 3
+ 18-bit comparator greater                             : 3
 # Multiplexers                                         : 4
  1-bit 2-to-1 multiplexer                              : 2
  4-bit 2-to-1 multiplexer                              : 2
@@ -165,8 +163,8 @@ Macro Statistics
 
 
 Synthesizing (advanced) Unit <Height>.
-The following registers are absorbed into counter <Count>: 1 register on signal <Count>.
 The following registers are absorbed into counter <CountE>: 1 register on signal <CountE>.
+The following registers are absorbed into counter <Count>: 1 register on signal <Count>.
 Unit <Height> synthesized (advanced).
 
 =========================================================================
@@ -174,14 +172,13 @@ Advanced HDL Synthesis Report
 
 Macro Statistics
 # Adders/Subtractors                                   : 1
- 32-bit subtractor                                     : 1
+ 18-bit subtractor                                     : 1
 # Counters                                             : 2
- 17-bit up counter                                     : 1
- 32-bit up counter                                     : 1
-# Registers                                            : 34
- Flip-Flops                                            : 34
+ 17-bit up counter                                     : 2
+# Registers                                            : 19
+ Flip-Flops                                            : 19
 # Comparators                                          : 3
- 32-bit comparator greater                             : 3
+ 18-bit comparator greater                             : 3
 # Multiplexers                                         : 4
  1-bit 2-to-1 multiplexer                              : 2
  4-bit 2-to-1 multiplexer                              : 2
@@ -204,8 +201,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 83
- Flip-Flops                                            : 83
+# Registers                                            : 53
+ Flip-Flops                                            : 53
 
 =========================================================================
 
@@ -228,26 +225,26 @@ Top Level Output File Name         : Height.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 334
+# BELS                             : 222
 #      GND                         : 1
-#      INV                         : 27
-#      LUT1                        : 54
-#      LUT2                        : 1
-#      LUT3                        : 6
-#      LUT4                        : 37
-#      LUT5                        : 26
-#      LUT6                        : 11
-#      MUXCY                       : 93
+#      INV                         : 12
+#      LUT1                        : 39
+#      LUT2                        : 7
+#      LUT3                        : 21
+#      LUT4                        : 22
+#      LUT5                        : 2
+#      LUT6                        : 16
+#      MUXCY                       : 49
 #      VCC                         : 1
-#      XORCY                       : 77
-# FlipFlops/Latches                : 83
-#      FD                          : 34
-#      FDE                         : 32
-#      FDR                         : 17
+#      XORCY                       : 52
+# FlipFlops/Latches                : 53
+#      FD                          : 19
+#      FDE                         : 17
+#      FDRE                        : 17
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 6
-#      IBUF                        : 1
+# IO Buffers                       : 7
+#      IBUF                        : 2
 #      OBUF                        : 5
 
 Device utilization summary:
@@ -257,20 +254,20 @@ Selected Device : 6slx16csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:              83  out of  18224     0%  
- Number of Slice LUTs:                  162  out of   9112     1%  
-    Number used as Logic:               162  out of   9112     1%  
+ Number of Slice Registers:              53  out of  18224     0%  
+ Number of Slice LUTs:                  119  out of   9112     1%  
+    Number used as Logic:               119  out of   9112     1%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    193
-   Number with an unused Flip Flop:     110  out of    193    56%  
-   Number with an unused LUT:            31  out of    193    16%  
-   Number of fully used LUT-FF pairs:    52  out of    193    26%  
+ Number of LUT Flip Flop pairs used:    119
+   Number with an unused Flip Flop:      66  out of    119    55%  
+   Number with an unused LUT:             0  out of    119     0%  
+   Number of fully used LUT-FF pairs:    53  out of    119    44%  
    Number of unique control sets:         3
 
 IO Utilization: 
- Number of IOs:                           7
- Number of bonded IOBs:                   7  out of    232     3%  
+ Number of IOs:                           8
+ Number of bonded IOBs:                   8  out of    232     3%  
 
 Specific Feature Utilization:
  Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
@@ -296,7 +293,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-Clk                                | BUFGP                  | 83    |
+Clk                                | BUFGP                  | 53    |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -307,9 +304,9 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 4.307ns (Maximum Frequency: 232.199MHz)
-   Minimum input arrival time before clock: 4.765ns
-   Maximum output required time after clock: 8.095ns
+   Minimum period: 5.146ns (Maximum Frequency: 194.339MHz)
+   Minimum input arrival time before clock: 3.826ns
+   Maximum output required time after clock: 9.048ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -318,99 +315,78 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'Clk'
-  Clock period: 4.307ns (frequency: 232.199MHz)
-  Total number of paths / destination ports: 2239 / 132
+  Clock period: 5.146ns (frequency: 194.339MHz)
+  Total number of paths / destination ports: 2195 / 104
 -------------------------------------------------------------------------
-Delay:               4.307ns (Levels of Logic = 2)
-  Source:            Count_16 (FF)
+Delay:               5.146ns (Levels of Logic = 3)
+  Source:            Count_5 (FF)
   Destination:       Echo_time_0 (FF)
   Source Clock:      Clk rising
   Destination Clock: Clk rising
 
-  Data Path: Count_16 to Echo_time_0
+  Data Path: Count_5 to Echo_time_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q              5   0.447   0.943  Count_16 (Count_16)
-     LUT3:I0->O            3   0.205   0.879  _n0063_SW0 (N10)
-     LUT6:I3->O           33   0.205   1.305  Echo_Distance.Sent_AND_2_o1 (Echo_Distance.Sent_AND_2_o)
+     FDRE:C->Q             4   0.447   0.912  Count_5 (Count_5)
+     LUT3:I0->O            3   0.205   0.879  n0015<16>31 (n0015<16>3)
+     LUT6:I3->O            3   0.205   0.651  GND_6_o_Count[16]_equal_1_o<16>2 (GND_6_o_Count[16]_equal_1_o)
+     LUT6:I5->O           34   0.205   1.320  Mmux_Distance.Sent_Distance.Sent_MUX_4_o1 (Distance.Sent_Distance.Sent_MUX_4_o)
      FDE:CE                    0.322          Echo_time_0
     ----------------------------------------
-    Total                      4.307ns (1.179ns logic, 3.128ns route)
-                                       (27.4% logic, 72.6% route)
+    Total                      5.146ns (1.384ns logic, 3.762ns route)
+                                       (26.9% logic, 73.1% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'Clk'
-  Total number of paths / destination ports: 97 / 65
+  Total number of paths / destination ports: 52 / 52
 -------------------------------------------------------------------------
-Offset:              4.765ns (Levels of Logic = 2)
-  Source:            Echo (PAD)
-  Destination:       Echo_time_0 (FF)
+Offset:              3.826ns (Levels of Logic = 2)
+  Source:            Req (PAD)
+  Destination:       Count_0 (FF)
   Destination Clock: Clk rising
 
-  Data Path: Echo to Echo_time_0
+  Data Path: Req to Count_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            36   1.222   1.713  Echo_IBUF (Echo_IBUF)
-     LUT6:I0->O           33   0.203   1.305  Echo_Distance.Sent_AND_2_o1 (Echo_Distance.Sent_AND_2_o)
-     FDE:CE                    0.322          Echo_time_0
+     IBUF:I->O             1   1.222   0.944  Req_IBUF (Req_IBUF)
+     LUT6:I0->O           17   0.203   1.027  _n00711 (_n0071)
+     FDRE:R                    0.430          Count_0
     ----------------------------------------
-    Total                      4.765ns (1.747ns logic, 3.018ns route)
-                                       (36.7% logic, 63.3% route)
+    Total                      3.826ns (1.855ns logic, 1.971ns route)
+                                       (48.5% logic, 51.5% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'Clk'
-  Total number of paths / destination ports: 7850 / 5
+  Total number of paths / destination ports: 1531 / 5
 -------------------------------------------------------------------------
-Offset:              8.095ns (Levels of Logic = 35)
+Offset:              9.048ns (Levels of Logic = 13)
   Source:            Echo_time_0 (FF)
-  Destination:       LED<3> (PAD)
+  Destination:       LED<1> (PAD)
   Source Clock:      Clk rising
 
-  Data Path: Echo_time_0 to LED<3>
+  Data Path: Echo_time_0 to LED<1>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q              1   0.447   0.579  Echo_time_0 (Echo_time_0)
-     INV:I->O              1   0.206   0.000  Msub_Fee_Generator.Vehicle_Height_lut<0>_INV_0 (Msub_Fee_Generator.Vehicle_Height_lut<0>)
-     MUXCY:S->O            1   0.172   0.000  Msub_Fee_Generator.Vehicle_Height_cy<0> (Msub_Fee_Generator.Vehicle_Height_cy<0>)
-     MUXCY:CI->O           1   0.019   0.000  Msub_Fee_Generator.Vehicle_Height_cy<1> (Msub_Fee_Generator.Vehicle_Height_cy<1>)
-     MUXCY:CI->O           1   0.019   0.000  Msub_Fee_Generator.Vehicle_Height_cy<2> (Msub_Fee_Generator.Vehicle_Height_cy<2>)
-     MUXCY:CI->O           1   0.019   0.000  Msub_Fee_Generator.Vehicle_Height_cy<3> (Msub_Fee_Generator.Vehicle_Height_cy<3>)
-     MUXCY:CI->O           1   0.019   0.000  Msub_Fee_Generator.Vehicle_Height_cy<4> (Msub_Fee_Generator.Vehicle_Height_cy<4>)
-     MUXCY:CI->O           1   0.019   0.000  Msub_Fee_Generator.Vehicle_Height_cy<5> (Msub_Fee_Generator.Vehicle_Height_cy<5>)
-     MUXCY:CI->O           1   0.019   0.000  Msub_Fee_Generator.Vehicle_Height_cy<6> (Msub_Fee_Generator.Vehicle_Height_cy<6>)
-     MUXCY:CI->O           1   0.019   0.000  Msub_Fee_Generator.Vehicle_Height_cy<7> (Msub_Fee_Generator.Vehicle_Height_cy<7>)
-     MUXCY:CI->O           1   0.019   0.000  Msub_Fee_Generator.Vehicle_Height_cy<8> (Msub_Fee_Generator.Vehicle_Height_cy<8>)
-     MUXCY:CI->O           1   0.019   0.000  Msub_Fee_Generator.Vehicle_Height_cy<9> (Msub_Fee_Generator.Vehicle_Height_cy<9>)
-     MUXCY:CI->O           1   0.019   0.000  Msub_Fee_Generator.Vehicle_Height_cy<10> (Msub_Fee_Generator.Vehicle_Height_cy<10>)
-     MUXCY:CI->O           1   0.019   0.000  Msub_Fee_Generator.Vehicle_Height_cy<11> (Msub_Fee_Generator.Vehicle_Height_cy<11>)
-     MUXCY:CI->O           1   0.019   0.000  Msub_Fee_Generator.Vehicle_Height_cy<12> (Msub_Fee_Generator.Vehicle_Height_cy<12>)
-     MUXCY:CI->O           1   0.019   0.000  Msub_Fee_Generator.Vehicle_Height_cy<13> (Msub_Fee_Generator.Vehicle_Height_cy<13>)
-     MUXCY:CI->O           1   0.019   0.000  Msub_Fee_Generator.Vehicle_Height_cy<14> (Msub_Fee_Generator.Vehicle_Height_cy<14>)
-     MUXCY:CI->O           1   0.019   0.000  Msub_Fee_Generator.Vehicle_Height_cy<15> (Msub_Fee_Generator.Vehicle_Height_cy<15>)
-     MUXCY:CI->O           1   0.019   0.000  Msub_Fee_Generator.Vehicle_Height_cy<16> (Msub_Fee_Generator.Vehicle_Height_cy<16>)
-     MUXCY:CI->O           1   0.019   0.000  Msub_Fee_Generator.Vehicle_Height_cy<17> (Msub_Fee_Generator.Vehicle_Height_cy<17>)
-     MUXCY:CI->O           1   0.019   0.000  Msub_Fee_Generator.Vehicle_Height_cy<18> (Msub_Fee_Generator.Vehicle_Height_cy<18>)
-     MUXCY:CI->O           1   0.019   0.000  Msub_Fee_Generator.Vehicle_Height_cy<19> (Msub_Fee_Generator.Vehicle_Height_cy<19>)
-     MUXCY:CI->O           1   0.019   0.000  Msub_Fee_Generator.Vehicle_Height_cy<20> (Msub_Fee_Generator.Vehicle_Height_cy<20>)
-     MUXCY:CI->O           1   0.019   0.000  Msub_Fee_Generator.Vehicle_Height_cy<21> (Msub_Fee_Generator.Vehicle_Height_cy<21>)
-     MUXCY:CI->O           1   0.019   0.000  Msub_Fee_Generator.Vehicle_Height_cy<22> (Msub_Fee_Generator.Vehicle_Height_cy<22>)
-     MUXCY:CI->O           1   0.019   0.000  Msub_Fee_Generator.Vehicle_Height_cy<23> (Msub_Fee_Generator.Vehicle_Height_cy<23>)
-     MUXCY:CI->O           1   0.019   0.000  Msub_Fee_Generator.Vehicle_Height_cy<24> (Msub_Fee_Generator.Vehicle_Height_cy<24>)
-     MUXCY:CI->O           1   0.019   0.000  Msub_Fee_Generator.Vehicle_Height_cy<25> (Msub_Fee_Generator.Vehicle_Height_cy<25>)
-     MUXCY:CI->O           1   0.019   0.000  Msub_Fee_Generator.Vehicle_Height_cy<26> (Msub_Fee_Generator.Vehicle_Height_cy<26>)
-     MUXCY:CI->O           1   0.019   0.000  Msub_Fee_Generator.Vehicle_Height_cy<27> (Msub_Fee_Generator.Vehicle_Height_cy<27>)
-     MUXCY:CI->O           1   0.019   0.000  Msub_Fee_Generator.Vehicle_Height_cy<28> (Msub_Fee_Generator.Vehicle_Height_cy<28>)
-     XORCY:CI->O           6   0.180   1.089  Msub_Fee_Generator.Vehicle_Height_xor<29> (Fee_Generator.Vehicle_Height<29>)
-     LUT5:I0->O            0   0.203   0.000  Mcompar_GND_6_o_GND_6_o_LessThan_16_o_lutdi4 (Mcompar_GND_6_o_GND_6_o_LessThan_16_o_lutdi4)
-     MUXCY:DI->O           3   0.339   0.995  Mcompar_GND_6_o_GND_6_o_LessThan_16_o_cy<4> (Mcompar_GND_6_o_GND_6_o_LessThan_16_o_cy<4>)
-     LUT6:I1->O            1   0.203   0.579  Mmux_LED41 (LED_3_OBUF)
-     OBUF:I->O                 2.571          LED_3_OBUF (LED<3>)
+     FDE:C->Q              2   0.447   0.616  Echo_time_0 (Echo_time_0)
+     INV:I->O              1   0.206   0.000  Msub_n0044_lut<0>_INV_0 (Msub_n0044_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  Msub_n0044_cy<0> (Msub_n0044_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  Msub_n0044_cy<1> (Msub_n0044_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  Msub_n0044_cy<2> (Msub_n0044_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  Msub_n0044_cy<3> (Msub_n0044_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  Msub_n0044_cy<4> (Msub_n0044_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  Msub_n0044_cy<5> (Msub_n0044_cy<5>)
+     XORCY:CI->O           3   0.180   0.755  Msub_n0044_xor<6> (n0044<6>)
+     LUT2:I0->O            1   0.203   0.924  GND_6_o_GND_6_o_LessThan_17_o23 (GND_6_o_GND_6_o_LessThan_17_o22)
+     LUT6:I1->O            1   0.203   0.808  GND_6_o_GND_6_o_LessThan_17_o24 (GND_6_o_GND_6_o_LessThan_17_o23)
+     LUT6:I3->O            3   0.205   0.879  GND_6_o_GND_6_o_LessThan_17_o25 (GND_6_o_GND_6_o_LessThan_17_o)
+     LUT4:I1->O            1   0.205   0.579  Mmux_LED21 (LED_1_OBUF)
+     OBUF:I->O                 2.571          LED_1_OBUF (LED<1>)
     ----------------------------------------
-    Total                      8.095ns (4.853ns logic, 3.242ns route)
-                                       (60.0% logic, 40.0% route)
+    Total                      9.048ns (4.487ns logic, 4.561ns route)
+                                       (49.6% logic, 50.4% route)
 
 =========================================================================
 
@@ -422,14 +398,14 @@ Clock to Setup on destination clock Clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-Clk            |    4.307|         |         |         |
+Clk            |    5.146|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 7.00 secs
-Total CPU time to Xst completion: 6.54 secs
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 5.35 secs
  
 --> 
 

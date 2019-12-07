@@ -26,6 +26,7 @@ use IEEE.std_logic_arith.all;
 entity Height is
     Port (Clk     : in  STD_LOGIC;
 			 Echo	   : in  STD_LOGIC;
+			 Req		: in  STD_LOGIC;
 			 LED		: out STD_LOGIC_VECTOR(3 downto 0);
 			 Trigger : out STD_LOGIC);
 end Height;
@@ -43,7 +44,7 @@ architecture Height_Arch of Height is
   -- Constants used by the Fee Generator
   constant Total_Height : integer := 120000;				-- 20 cm is the distance from the sensor to the ground
   -- Signal used by the Fee Generator
-  signal	  Fee 			: STD_LOGIC_VECTOR(3 downto 0);	-- Fee goes from 0 to 200 Pesos
+  --signal	  Fee 			: STD_LOGIC_VECTOR(3 downto 0);	-- Fee goes from 0 to 200 Pesos
   
 begin
   -- Trigger pulse sending time
@@ -69,32 +70,32 @@ begin
 		end if;
 		  
 		-- Resets counter
-		if (Count = Sample_Count-1) then
-        Count <= 0;
-      else		  
-	     Count <= Count + 1;
+		if (Count /= Sample_Count-1) then
+        Count <= Count + 1;
+      elsif(Req = '1') then	  
+	     Count <= 0;
 		end if;
 		
 	end if;
   end process Distance;
   
   -- Fee Generator
-  Fee_Generator: process(Echo_time, Fee)
+  Fee_Generator: process(Req, Echo_time)--, Fee)
   variable Vehicle_Height : integer := 0;
   begin
 	Vehicle_Height := Total_Height - Echo_time;	
-	if (Vehicle_Height < 30000) then
-		Fee <= "0001";
-	elsif (Vehicle_Height < 60000) then
-		Fee <= "0010";
-	elsif (Vehicle_Height < 90000) then
-		Fee <= "0100";
+	if (Vehicle_Height > 90000) then
+		LED <= "1000";
+	elsif (Vehicle_Height > 60000) then
+		LED <= "0100";
+	elsif (Vehicle_Height > 30000) then
+		LED <= "0010";
 	else
-		Fee <= "1000";
+		LED <= "0001";
 	end if;
 	
 	--LED <= CONV_STD_LOGIC_VECTOR(Fee, 4);
-   LED <= Fee;
+   --LED <= Fee;
   end process Fee_Generator;
   
   

@@ -1,11 +1,12 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Tue Dec 03 07:55:06 2019
+// Written by: Map P.20131013 on Sat Dec 07 14:33:36 2019
 //! **************************************************************************
 
 SCHEMATIC START;
 COMP "Trigger" LOCATE = SITE "V12" LEVEL 1;
 COMP "LED<0>" LOCATE = SITE "V15" LEVEL 1;
 COMP "LED<1>" LOCATE = SITE "U15" LEVEL 1;
+COMP "Req" LOCATE = SITE "B8" LEVEL 1;
 COMP "LED<2>" LOCATE = SITE "V16" LEVEL 1;
 COMP "LED<3>" LOCATE = SITE "U16" LEVEL 1;
 COMP "Echo" LOCATE = SITE "T12" LEVEL 1;

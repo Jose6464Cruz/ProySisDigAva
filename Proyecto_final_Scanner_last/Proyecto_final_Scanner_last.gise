@@ -107,7 +107,9 @@
     <transform xil_pn:end_ts="1575743258" xil_pn:in_ck="3674400080216631117" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-4994827917003559546" xil_pn:start_ts="1575743248">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Scanner_Last.lso"/>
       <outfile xil_pn:name="Scanner_Last.ngc"/>
@@ -124,10 +126,15 @@
     <transform xil_pn:end_ts="1575742406" xil_pn:in_ck="3674400080216629865" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="52011804354937621" xil_pn:start_ts="1575742406">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
     </transform>
     <transform xil_pn:end_ts="1575743264" xil_pn:in_ck="573187915990502796" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-2584916082860209768" xil_pn:start_ts="1575743258">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="Scanner_Last.bld"/>
       <outfile xil_pn:name="Scanner_Last.ngd"/>
       <outfile xil_pn:name="Scanner_Last_ngdbuild.xrpt"/>
@@ -138,7 +145,10 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Scanner_Last.pcf"/>
       <outfile xil_pn:name="Scanner_Last_map.map"/>
@@ -153,6 +163,9 @@
     <transform xil_pn:end_ts="1575743287" xil_pn:in_ck="-5298391452736837850" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-1178055513630676559" xil_pn:start_ts="1575743273">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="Scanner_Last.ncd"/>
       <outfile xil_pn:name="Scanner_Last.pad"/>
       <outfile xil_pn:name="Scanner_Last.par"/>
@@ -167,6 +180,7 @@
     <transform xil_pn:end_ts="1575743297" xil_pn:in_ck="3674400080216622240" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="5341574683187206424" xil_pn:start_ts="1575743287">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="Scanner_Last.ut"/>
       <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
       <outfile xil_pn:name="scanner_last.bgn"/>
@@ -179,6 +193,9 @@
     <transform xil_pn:end_ts="1575743287" xil_pn:in_ck="3629209398761121545" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1575743282">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="Scanner_Last.twr"/>
       <outfile xil_pn:name="Scanner_Last.twx"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>

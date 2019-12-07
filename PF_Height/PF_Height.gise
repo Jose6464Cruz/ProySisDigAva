@@ -104,12 +104,10 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1575381293" xil_pn:in_ck="3488286314529193" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="737875157762313179" xil_pn:start_ts="1575381284">
+    <transform xil_pn:end_ts="1575750805" xil_pn:in_ck="3488286314529193" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="737875157762313179" xil_pn:start_ts="1575750797">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Height.lso"/>
       <outfile xil_pn:name="Height.ngc"/>
@@ -123,26 +121,22 @@
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
     </transform>
-    <transform xil_pn:end_ts="1575331685" xil_pn:in_ck="3488286314527941" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-8417215606437665814" xil_pn:start_ts="1575331685">
+    <transform xil_pn:end_ts="1575750065" xil_pn:in_ck="3488286314527941" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-8417215606437665814" xil_pn:start_ts="1575750065">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1575381299" xil_pn:in_ck="6064029638390089476" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="3769104183243218733" xil_pn:start_ts="1575381293">
+    <transform xil_pn:end_ts="1575750810" xil_pn:in_ck="6064029638390089476" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="3769104183243218733" xil_pn:start_ts="1575750805">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="Height.bld"/>
       <outfile xil_pn:name="Height.ngd"/>
       <outfile xil_pn:name="Height_ngdbuild.xrpt"/>
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1575381308" xil_pn:in_ck="6065561217375353925" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="1463976855095865663" xil_pn:start_ts="1575381299">
+    <transform xil_pn:end_ts="1575750818" xil_pn:in_ck="6065561217375353925" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="1463976855095865663" xil_pn:start_ts="1575750810">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Height.pcf"/>
@@ -155,11 +149,9 @@
       <outfile xil_pn:name="Height_usage.xml"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1575381321" xil_pn:in_ck="-7658629821827194850" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-1178055513630676559" xil_pn:start_ts="1575381308">
+    <transform xil_pn:end_ts="1575750829" xil_pn:in_ck="-7658629821827194850" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-1178055513630676559" xil_pn:start_ts="1575750818">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="Height.ncd"/>
       <outfile xil_pn:name="Height.pad"/>
       <outfile xil_pn:name="Height.par"/>
@@ -171,10 +163,9 @@
       <outfile xil_pn:name="Height_par.xrpt"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1575381331" xil_pn:in_ck="3488286314520316" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="5341574683187206424" xil_pn:start_ts="1575381321">
+    <transform xil_pn:end_ts="1575750838" xil_pn:in_ck="3488286314520316" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="5341574683187206424" xil_pn:start_ts="1575750829">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="Height.ut"/>
       <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
       <outfile xil_pn:name="height.bgn"/>
@@ -184,10 +175,9 @@
       <outfile xil_pn:name="webtalk.log"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1575381321" xil_pn:in_ck="5863392791320446657" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1575381316">
+    <transform xil_pn:end_ts="1575750829" xil_pn:in_ck="5863392791320446657" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1575750825">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="Height.twr"/>
       <outfile xil_pn:name="Height.twx"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
