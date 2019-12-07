@@ -32,41 +32,40 @@ Data Sheet report:
 -----------------
 All values displayed in nanoseconds (ns)
 
-Setup/Hold to clock Clk
----------------+------------+------------+------------+------------+------------------+--------+
-               |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
-Source         | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
----------------+------------+------------+------------+------------+------------------+--------+
-Clk_signal_Scan|    3.827(F)|      SLOW  |   -0.595(F)|      SLOW  |Clk_BUFGP         |   0.000|
-Data_Scan      |    0.613(F)|      FAST  |    0.121(F)|      SLOW  |Clk_BUFGP         |   0.000|
-Rst            |    5.514(F)|      SLOW  |   -1.804(F)|      FAST  |Clk_BUFGP         |   0.000|
----------------+------------+------------+------------+------------+------------------+--------+
+Setup/Hold to clock Clk_signal_Scan
+------------+------------+------------+------------+------------+---------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                     | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s)    | Phase  |
+------------+------------+------------+------------+------------+---------------------+--------+
+Data_Scan   |   -0.927(F)|      FAST  |    2.497(F)|      SLOW  |Clk_signal_Scan_BUFGP|   0.000|
+Rst         |    1.722(F)|      SLOW  |    1.177(F)|      SLOW  |Clk_signal_Scan_BUFGP|   0.000|
+------------+------------+------------+------------+------------+---------------------+--------+
 
-Clock Clk to Pad
-------------+-----------------+------------+-----------------+------------+------------------+--------+
-            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
-Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
-------------+-----------------+------------+-----------------+------------+------------------+--------+
-Data_Out<0> |         6.872(F)|      SLOW  |         3.559(F)|      FAST  |Clk_BUFGP         |   0.000|
-Data_Out<1> |         6.878(F)|      SLOW  |         3.565(F)|      FAST  |Clk_BUFGP         |   0.000|
-Data_Out<2> |         6.693(F)|      SLOW  |         3.459(F)|      FAST  |Clk_BUFGP         |   0.000|
-Data_Out<3> |         6.693(F)|      SLOW  |         3.459(F)|      FAST  |Clk_BUFGP         |   0.000|
-Data_Out<4> |         7.040(F)|      SLOW  |         3.618(F)|      FAST  |Clk_BUFGP         |   0.000|
-Data_Out<5> |         6.936(F)|      SLOW  |         3.593(F)|      FAST  |Clk_BUFGP         |   0.000|
-Data_Out<6> |         6.790(F)|      SLOW  |         3.497(F)|      FAST  |Clk_BUFGP         |   0.000|
-Data_Out<7> |         6.790(F)|      SLOW  |         3.497(F)|      FAST  |Clk_BUFGP         |   0.000|
-------------+-----------------+------------+-----------------+------------+------------------+--------+
+Clock Clk_signal_Scan to Pad
+------------+-----------------+------------+-----------------+------------+---------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                     | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)    | Phase  |
+------------+-----------------+------------+-----------------+------------+---------------------+--------+
+Data_Out<0> |        10.695(F)|      SLOW  |         6.085(F)|      FAST  |Clk_signal_Scan_BUFGP|   0.000|
+Data_Out<1> |        10.640(F)|      SLOW  |         6.073(F)|      FAST  |Clk_signal_Scan_BUFGP|   0.000|
+Data_Out<2> |        10.549(F)|      SLOW  |         6.028(F)|      FAST  |Clk_signal_Scan_BUFGP|   0.000|
+Data_Out<3> |        10.740(F)|      SLOW  |         6.144(F)|      FAST  |Clk_signal_Scan_BUFGP|   0.000|
+Data_Out<4> |        10.171(F)|      SLOW  |         5.685(F)|      FAST  |Clk_signal_Scan_BUFGP|   0.000|
+Data_Out<5> |        10.201(F)|      SLOW  |         5.729(F)|      FAST  |Clk_signal_Scan_BUFGP|   0.000|
+Data_Out<6> |         9.917(F)|      SLOW  |         5.554(F)|      FAST  |Clk_signal_Scan_BUFGP|   0.000|
+Data_Out<7> |        10.132(F)|      SLOW  |         5.693(F)|      FAST  |Clk_signal_Scan_BUFGP|   0.000|
+------------+-----------------+------------+-----------------+------------+---------------------+--------+
 
-Clock to Setup on destination clock Clk
+Clock to Setup on destination clock Clk_signal_Scan
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-Clk            |         |         |         |    3.737|
+Clk_signal_Scan|         |         |         |    3.379|
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Sat Dec 07 12:02:07 2019 
+Analysis completed Sat Dec 07 12:28:06 2019 
 --------------------------------------------------------------------------------
 
 Trace Settings:

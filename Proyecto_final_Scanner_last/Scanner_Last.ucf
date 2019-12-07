@@ -1,8 +1,8 @@
 # PlanAhead Generated physical constraints 
 
-NET "Data_Scan" 		 LOC = T12; #Pin 1 cable blanco
-NET "Clk_signal_Scan" LOC = V12; #Pin 2 cable amarillo
-NET "Clk" 				 LOC = V10;
+NET "Clk_signal_Scan" LOC = V12 | CLOCK_DEDICATED_ROUTE=FALSE; #Pin 2 yellow wire
+
+NET "Data_Scan" 		 LOC = T12; #Pin 1 white wire
 NET "Rst" 				 LOC = B8;		
 
 NET "Data_Out[0]" LOC = U16;

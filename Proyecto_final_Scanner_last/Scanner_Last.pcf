@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Sat Dec 07 12:01:51 2019
+// Written by: Map P.20131013 on Sat Dec 07 12:27:52 2019
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -12,8 +12,9 @@ COMP "Data_Out<5>" LOCATE = SITE "N11" LEVEL 1;
 COMP "Data_Out<6>" LOCATE = SITE "R11" LEVEL 1;
 COMP "Data_Out<7>" LOCATE = SITE "T11" LEVEL 1;
 COMP "Rst" LOCATE = SITE "B8" LEVEL 1;
-COMP "Clk" LOCATE = SITE "V10" LEVEL 1;
 COMP "Clk_signal_Scan" LOCATE = SITE "V12" LEVEL 1;
+PIN Clk_signal_Scan_pin<0> = BEL "Clk_signal_Scan" PINNAME PAD;
+PIN "Clk_signal_Scan_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
 COMP "Data_Out<0>" LOCATE = SITE "U16" LEVEL 1;
 SCHEMATIC END;
 

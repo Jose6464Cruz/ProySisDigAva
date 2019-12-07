@@ -1,7 +1,7 @@
 #Release 14.7 - par P.20131013 (nt64)
 #Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-#Sat Dec 07 12:02:01 2019
+#Sat Dec 07 12:28:00 2019
 
 #
 ## NOTE: This file is designed to be imported into a spreadsheet program
@@ -334,7 +334,7 @@ V6,,IOBS,IO_L45N_2,UNUSED,,2,,,,,,,,,
 V7,,IOBS,IO_L43N_2,UNUSED,,2,,,,,,,,,
 V8,,IOBS,IO_L41N_VREF_2,UNUSED,,2,,,,,,,,,
 V9,,IOBS,IO_L32N_GCLK28_2,UNUSED,,2,,,,,,,,,
-V10,Clk,IOB,IO_L30N_GCLK0_USERCCLK_2,INPUT,LVCMOS25*,2,,,,NONE,,LOCATED,NO,NONE,
+V10,,IOBS,IO_L30N_GCLK0_USERCCLK_2,UNUSED,,2,,,,,,,,,
 V11,,IOBS,IO_L23N_2,UNUSED,,2,,,,,,,,,
 V12,Clk_signal_Scan,IOB,IO_L19N_2,INPUT,LVCMOS25*,2,,,,NONE,,LOCATED,NO,NONE,
 V13,,IOBS,IO_L14N_D12_2,UNUSED,,2,,,,,,,,,
