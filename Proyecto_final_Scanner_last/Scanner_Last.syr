@@ -1,0 +1,381 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.32 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.32 secs
+ 
+--> Reading design: Scanner_Last.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Scanner_Last.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Scanner_Last"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : Scanner_Last
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "D:\Repositories\ProySisDigAva\Proyecto_final_Scanner_last\Scanner_Last.vhd" into library work
+Parsing entity <Scanner_Last>.
+Parsing architecture <Behavioral> of entity <scanner_last>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <Scanner_Last> (architecture <Behavioral>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Scanner_Last>.
+    Related source file is "D:\Repositories\ProySisDigAva\Proyecto_final_Scanner_last\Scanner_Last.vhd".
+    Found 11-bit register for signal <Reg>.
+    Found 4-bit register for signal <cont>.
+    Found 1-bit register for signal <Flag_first>.
+    Found 4-bit adder for signal <cont[3]_GND_6_o_add_1_OUT> created at line 50.
+    Found 4-bit comparator greater for signal <cont[3]_PWR_6_o_LessThan_1_o> created at line 48
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  16 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <Scanner_Last> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 4-bit adder                                           : 1
+# Registers                                            : 3
+ 1-bit register                                        : 1
+ 11-bit register                                       : 1
+ 4-bit register                                        : 1
+# Comparators                                          : 1
+ 4-bit comparator greater                              : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <Scanner_Last>.
+The following registers are absorbed into counter <cont>: 1 register on signal <cont>.
+Unit <Scanner_Last> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 4-bit up counter                                      : 1
+# Registers                                            : 12
+ Flip-Flops                                            : 12
+# Comparators                                          : 1
+ 4-bit comparator greater                              : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <Scanner_Last> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Scanner_Last, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 16
+ Flip-Flops                                            : 16
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Scanner_Last.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 10
+#      INV                         : 1
+#      LUT2                        : 3
+#      LUT5                        : 4
+#      LUT6                        : 2
+# FlipFlops/Latches                : 16
+#      FD_1                        : 1
+#      FDCE                        : 4
+#      FDCE_1                      : 11
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 11
+#      IBUF                        : 3
+#      OBUF                        : 8
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              16  out of  18224     0%  
+ Number of Slice LUTs:                   10  out of   9112     0%  
+    Number used as Logic:                10  out of   9112     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     19
+   Number with an unused Flip Flop:       3  out of     19    15%  
+   Number with an unused LUT:             9  out of     19    47%  
+   Number of fully used LUT-FF pairs:     7  out of     19    36%  
+   Number of unique control sets:         3
+
+IO Utilization: 
+ Number of IOs:                          12
+ Number of bonded IOBs:                  12  out of    232     5%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+Clk                                | BUFGP                  | 16    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 2.943ns (Maximum Frequency: 339.784MHz)
+   Minimum input arrival time before clock: 3.806ns
+   Maximum output required time after clock: 3.634ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Clk'
+  Clock period: 2.943ns (frequency: 339.784MHz)
+  Total number of paths / destination ports: 90 / 30
+-------------------------------------------------------------------------
+Delay:               2.943ns (Levels of Logic = 1)
+  Source:            cont_3 (FF)
+  Destination:       Reg_0 (FF)
+  Source Clock:      Clk falling
+  Destination Clock: Clk falling
+
+  Data Path: cont_3 to Reg_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             6   0.447   1.089  cont_3 (cont_3)
+     LUT6:I1->O           11   0.203   0.882  Clk_signal_Scan_cont[3]_AND_3_o11 (Clk_signal_Scan_cont[3]_AND_3_o)
+     FDCE_1:CE                 0.322          Reg_0
+    ----------------------------------------
+    Total                      2.943ns (0.972ns logic, 1.971ns route)
+                                       (33.0% logic, 67.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Clk'
+  Total number of paths / destination ports: 35 / 32
+-------------------------------------------------------------------------
+Offset:              3.806ns (Levels of Logic = 3)
+  Source:            Rst (PAD)
+  Destination:       Flag_first (FF)
+  Destination Clock: Clk falling
+
+  Data Path: Rst to Flag_first
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            17   1.222   1.132  Rst_IBUF (Rst_IBUF)
+     LUT2:I0->O            1   0.203   0.944  _n00301 (_n0030)
+     LUT6:I0->O            1   0.203   0.000  Flag_first_glue_rst (Flag_first_glue_rst)
+     FD_1:D                    0.102          Flag_first
+    ----------------------------------------
+    Total                      3.806ns (1.730ns logic, 2.076ns route)
+                                       (45.5% logic, 54.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Clk'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              3.634ns (Levels of Logic = 1)
+  Source:            Reg_7 (FF)
+  Destination:       Data_Out<7> (PAD)
+  Source Clock:      Clk falling
+
+  Data Path: Reg_7 to Data_Out<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE_1:C->Q           2   0.447   0.616  Reg_7 (Reg_7)
+     OBUF:I->O                 2.571          Data_Out_7_OBUF (Data_Out<7>)
+    ----------------------------------------
+    Total                      3.634ns (3.018ns logic, 0.616ns route)
+                                       (83.0% logic, 17.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock Clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Clk            |         |         |    2.943|         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 11.00 secs
+Total CPU time to Xst completion: 11.15 secs
+ 
+--> 
+
+Total memory usage is 4510768 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

@@ -1,0 +1,16 @@
+# PlanAhead Generated physical constraints 
+
+NET "Data_Scan" 		 LOC = T12; #Pin 1 cable blanco
+NET "Clk_signal_Scan" LOC = V12; #Pin 2 cable amarillo
+NET "Clk" 				 LOC = V10;
+NET "Rst" 				 LOC = B8;		
+
+NET "Data_Out[0]" LOC = U16;
+NET "Data_Out[1]" LOC = V16;
+NET "Data_Out[3]" LOC = V15;
+NET "Data_Out[2]" LOC = U15;
+NET "Data_Out[5]" LOC = N11;
+NET "Data_Out[4]" LOC = M11;
+NET "Data_Out[6]" LOC = R11;
+NET "Data_Out[7]" LOC = T11;
+

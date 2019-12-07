@@ -1,0 +1,83 @@
+xst -intstyle ise -ifn "C:/Users/Jose Antonio/Desktop/ProyecSistemDigit/Proyecto_final_Scanner_last/Scanner_Last.xst" -ofn "C:/Users/Jose Antonio/Desktop/ProyecSistemDigit/Proyecto_final_Scanner_last/Scanner_Last.syr" 
+xst -intstyle ise -ifn "C:/Users/Jose Antonio/Desktop/ProyecSistemDigit/Proyecto_final_Scanner_last/Scanner_Last.xst" -ofn "C:/Users/Jose Antonio/Desktop/ProyecSistemDigit/Proyecto_final_Scanner_last/Scanner_Last.syr" 
+xst -intstyle ise -ifn "C:/Users/Jose Antonio/Desktop/ProyecSistemDigit/Proyecto_final_Scanner_last/Scanner_Last.xst" -ofn "C:/Users/Jose Antonio/Desktop/ProyecSistemDigit/Proyecto_final_Scanner_last/Scanner_Last.syr" 
+xst -intstyle ise -ifn "C:/Users/Jose Antonio/Desktop/ProyecSistemDigit/Proyecto_final_Scanner_last/Scanner_Last.xst" -ofn "C:/Users/Jose Antonio/Desktop/ProyecSistemDigit/Proyecto_final_Scanner_last/Scanner_Last.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Scanner_Last.ucf -p xc6slx16-csg324-3 "Scanner_Last.ngc" Scanner_Last.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Scanner_Last_map.ncd Scanner_Last.ngd Scanner_Last.pcf 
+par -w -intstyle ise -ol high -mt off Scanner_Last_map.ncd Scanner_Last.ncd Scanner_Last.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Scanner_Last.twx Scanner_Last.ncd -o Scanner_Last.twr Scanner_Last.pcf -ucf Scanner_Last.ucf 
+bitgen -intstyle ise -f Scanner_Last.ut Scanner_Last.ncd 
+xst -intstyle ise -ifn "C:/Users/Jose Antonio/Desktop/ProyecSistemDigit/Proyecto_final_Scanner_last/Scanner_Last.xst" -ofn "C:/Users/Jose Antonio/Desktop/ProyecSistemDigit/Proyecto_final_Scanner_last/Scanner_Last.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Scanner_Last.ucf -p xc6slx16-csg324-3 "Scanner_Last.ngc" Scanner_Last.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Scanner_Last_map.ncd Scanner_Last.ngd Scanner_Last.pcf 
+par -w -intstyle ise -ol high -mt off Scanner_Last_map.ncd Scanner_Last.ncd Scanner_Last.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Scanner_Last.twx Scanner_Last.ncd -o Scanner_Last.twr Scanner_Last.pcf -ucf Scanner_Last.ucf 
+bitgen -intstyle ise -f Scanner_Last.ut Scanner_Last.ncd 
+xst -intstyle ise -ifn "C:/Users/Jose Antonio/Desktop/ProyecSistemDigit/Proyecto_final_Scanner_last/Scanner_Last.xst" -ofn "C:/Users/Jose Antonio/Desktop/ProyecSistemDigit/Proyecto_final_Scanner_last/Scanner_Last.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Scanner_Last.ucf -p xc6slx16-csg324-3 "Scanner_Last.ngc" Scanner_Last.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Scanner_Last_map.ncd Scanner_Last.ngd Scanner_Last.pcf 
+par -w -intstyle ise -ol high -mt off Scanner_Last_map.ncd Scanner_Last.ncd Scanner_Last.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Scanner_Last.twx Scanner_Last.ncd -o Scanner_Last.twr Scanner_Last.pcf -ucf Scanner_Last.ucf 
+bitgen -intstyle ise -f Scanner_Last.ut Scanner_Last.ncd 
+xst -intstyle ise -ifn "C:/Users/Jose Antonio/Desktop/ProyecSistemDigit/Proyecto_final_Scanner_last/Scanner_Last.xst" -ofn "C:/Users/Jose Antonio/Desktop/ProyecSistemDigit/Proyecto_final_Scanner_last/Scanner_Last.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Scanner_Last.ucf -p xc6slx16-csg324-3 "Scanner_Last.ngc" Scanner_Last.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Scanner_Last_map.ncd Scanner_Last.ngd Scanner_Last.pcf 
+par -w -intstyle ise -ol high -mt off Scanner_Last_map.ncd Scanner_Last.ncd Scanner_Last.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Scanner_Last.twx Scanner_Last.ncd -o Scanner_Last.twr Scanner_Last.pcf -ucf Scanner_Last.ucf 
+bitgen -intstyle ise -f Scanner_Last.ut Scanner_Last.ncd 
+xst -intstyle ise -ifn "C:/Users/Jose Antonio/Desktop/ProyecSistemDigit/Proyecto_final_Scanner_last/Scanner_Last.xst" -ofn "C:/Users/Jose Antonio/Desktop/ProyecSistemDigit/Proyecto_final_Scanner_last/Scanner_Last.syr" 
+xst -intstyle ise -ifn "C:/Users/Jose Antonio/Desktop/ProyecSistemDigit/Proyecto_final_Scanner_last/Scanner_Last.xst" -ofn "C:/Users/Jose Antonio/Desktop/ProyecSistemDigit/Proyecto_final_Scanner_last/Scanner_Last.syr" 
+xst -intstyle ise -ifn "C:/Users/Jose Antonio/Desktop/ProyecSistemDigit/Proyecto_final_Scanner_last/Scanner_Last.xst" -ofn "C:/Users/Jose Antonio/Desktop/ProyecSistemDigit/Proyecto_final_Scanner_last/Scanner_Last.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Scanner_Last.ucf -p xc6slx16-csg324-3 "Scanner_Last.ngc" Scanner_Last.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Scanner_Last_map.ncd Scanner_Last.ngd Scanner_Last.pcf 
+par -w -intstyle ise -ol high -mt off Scanner_Last_map.ncd Scanner_Last.ncd Scanner_Last.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Scanner_Last.twx Scanner_Last.ncd -o Scanner_Last.twr Scanner_Last.pcf -ucf Scanner_Last.ucf 
+bitgen -intstyle ise -f Scanner_Last.ut Scanner_Last.ncd 
+xst -intstyle ise -ifn "C:/Users/Jose Antonio/Desktop/ProyecSistemDigit/Proyecto_final_Scanner_last/Scanner_Last.xst" -ofn "C:/Users/Jose Antonio/Desktop/ProyecSistemDigit/Proyecto_final_Scanner_last/Scanner_Last.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Scanner_Last.ucf -p xc6slx16-csg324-3 "Scanner_Last.ngc" Scanner_Last.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Scanner_Last_map.ncd Scanner_Last.ngd Scanner_Last.pcf 
+xst -intstyle ise -ifn "C:/Users/Jose Antonio/Desktop/ProyecSistemDigit/Proyecto_final_Scanner_last/Scanner_Last.xst" -ofn "C:/Users/Jose Antonio/Desktop/ProyecSistemDigit/Proyecto_final_Scanner_last/Scanner_Last.syr" 
+xst -intstyle ise -ifn "C:/Users/Jose Antonio/Desktop/ProyecSistemDigit/Proyecto_final_Scanner_last/Scanner_Last.xst" -ofn "C:/Users/Jose Antonio/Desktop/ProyecSistemDigit/Proyecto_final_Scanner_last/Scanner_Last.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Scanner_Last.ucf -p xc6slx16-csg324-3 "Scanner_Last.ngc" Scanner_Last.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Scanner_Last_map.ncd Scanner_Last.ngd Scanner_Last.pcf 
+par -w -intstyle ise -ol high -mt off Scanner_Last_map.ncd Scanner_Last.ncd Scanner_Last.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Scanner_Last.twx Scanner_Last.ncd -o Scanner_Last.twr Scanner_Last.pcf -ucf Scanner_Last.ucf 
+bitgen -intstyle ise -f Scanner_Last.ut Scanner_Last.ncd 
+xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/Proyecto_final_Scanner_last/Scanner_Last.xst" -ofn "D:/Repositories/ProySisDigAva/Proyecto_final_Scanner_last/Scanner_Last.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Scanner_Last.ucf -p xc6slx16-csg324-3 Scanner_Last.ngc Scanner_Last.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Scanner_Last_map.ncd Scanner_Last.ngd Scanner_Last.pcf 
+par -w -intstyle ise -ol high -mt off Scanner_Last_map.ncd Scanner_Last.ncd Scanner_Last.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Scanner_Last.twx Scanner_Last.ncd -o Scanner_Last.twr Scanner_Last.pcf -ucf Scanner_Last.ucf 
+bitgen -intstyle ise -f Scanner_Last.ut Scanner_Last.ncd 
+xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/Proyecto_final_Scanner_last/Scanner_Last.xst" -ofn "D:/Repositories/ProySisDigAva/Proyecto_final_Scanner_last/Scanner_Last.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Scanner_Last.ucf -p xc6slx16-csg324-3 Scanner_Last.ngc Scanner_Last.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Scanner_Last_map.ncd Scanner_Last.ngd Scanner_Last.pcf 
+par -w -intstyle ise -ol high -mt off Scanner_Last_map.ncd Scanner_Last.ncd Scanner_Last.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Scanner_Last.twx Scanner_Last.ncd -o Scanner_Last.twr Scanner_Last.pcf -ucf Scanner_Last.ucf 
+bitgen -intstyle ise -f Scanner_Last.ut Scanner_Last.ncd 
+xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/Proyecto_final_Scanner_last/Scanner_Last.xst" -ofn "D:/Repositories/ProySisDigAva/Proyecto_final_Scanner_last/Scanner_Last.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Scanner_Last.ucf -p xc6slx16-csg324-3 Scanner_Last.ngc Scanner_Last.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Scanner_Last_map.ncd Scanner_Last.ngd Scanner_Last.pcf 
+xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/Proyecto_final_Scanner_last/Scanner_Last.xst" -ofn "D:/Repositories/ProySisDigAva/Proyecto_final_Scanner_last/Scanner_Last.syr" 
+xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/Proyecto_final_Scanner_last/Scanner_Last.xst" -ofn "D:/Repositories/ProySisDigAva/Proyecto_final_Scanner_last/Scanner_Last.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Scanner_Last.ucf -p xc6slx16-csg324-3 Scanner_Last.ngc Scanner_Last.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Scanner_Last_map.ncd Scanner_Last.ngd Scanner_Last.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Scanner_Last.ucf -p xc6slx16-csg324-3 Scanner_Last.ngc Scanner_Last.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Scanner_Last_map.ncd Scanner_Last.ngd Scanner_Last.pcf 
+xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/Proyecto_final_Scanner_last/Scanner_Last.xst" -ofn "D:/Repositories/ProySisDigAva/Proyecto_final_Scanner_last/Scanner_Last.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Scanner_Last.ucf -p xc6slx16-csg324-3 Scanner_Last.ngc Scanner_Last.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Scanner_Last_map.ncd Scanner_Last.ngd Scanner_Last.pcf 
+par -w -intstyle ise -ol high -mt off Scanner_Last_map.ncd Scanner_Last.ncd Scanner_Last.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Scanner_Last.twx Scanner_Last.ncd -o Scanner_Last.twr Scanner_Last.pcf -ucf Scanner_Last.ucf 
+xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/Proyecto_final_Scanner_last/Scanner_Last.xst" -ofn "D:/Repositories/ProySisDigAva/Proyecto_final_Scanner_last/Scanner_Last.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Scanner_Last.ucf -p xc6slx16-csg324-3 Scanner_Last.ngc Scanner_Last.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Scanner_Last_map.ncd Scanner_Last.ngd Scanner_Last.pcf 
+par -w -intstyle ise -ol high -mt off Scanner_Last_map.ncd Scanner_Last.ncd Scanner_Last.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Scanner_Last.twx Scanner_Last.ncd -o Scanner_Last.twr Scanner_Last.pcf -ucf Scanner_Last.ucf 
+bitgen -intstyle ise -f Scanner_Last.ut Scanner_Last.ncd 
+xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/Proyecto_final_Scanner_last/Scanner_Last.xst" -ofn "D:/Repositories/ProySisDigAva/Proyecto_final_Scanner_last/Scanner_Last.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Scanner_Last.ucf -p xc6slx16-csg324-3 Scanner_Last.ngc Scanner_Last.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Scanner_Last_map.ncd Scanner_Last.ngd Scanner_Last.pcf 
+par -w -intstyle ise -ol high -mt off Scanner_Last_map.ncd Scanner_Last.ncd Scanner_Last.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Scanner_Last.twx Scanner_Last.ncd -o Scanner_Last.twr Scanner_Last.pcf -ucf Scanner_Last.ucf 
+bitgen -intstyle ise -f Scanner_Last.ut Scanner_Last.ncd 
