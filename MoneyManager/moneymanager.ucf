@@ -1,0 +1,12 @@
+
+
+NET "Add" LOC = C4;
+//NET "Rst" LOC = C9;
+NET "Switches[7]" LOC = T5;
+NET "Switches[6]" LOC = V8;
+NET "Switches[5]" LOC = U8;
+NET "Switches[4]" LOC = N8;
+NET "Switches[3]" LOC = M8;
+NET "Switches[2]" LOC = V9;
+NET "Switches[1]" LOC = T9;
+NET "Switches[0]" LOC = T10;

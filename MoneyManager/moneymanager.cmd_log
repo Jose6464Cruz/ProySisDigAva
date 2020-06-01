@@ -1,0 +1,221 @@
+xst -intstyle ise -ifn "C:/Proyectos Rick/MoneyManager/moneymanager.xst" -ofn "C:/Proyectos Rick/MoneyManager/moneymanager.syr" 
+xst -intstyle ise -ifn "C:/Proyectos Rick/MoneyManager/moneymanager.xst" -ofn "C:/Proyectos Rick/MoneyManager/moneymanager.syr" 
+xst -intstyle ise -ifn "C:/Proyectos Rick/MoneyManager/moneymanager.xst" -ofn "C:/Proyectos Rick/MoneyManager/moneymanager.syr" 
+xst -intstyle ise -ifn "C:/Proyectos Rick/MoneyManager/moneymanager.xst" -ofn "C:/Proyectos Rick/MoneyManager/moneymanager.syr" 
+xst -intstyle ise -ifn "C:/Proyectos Rick/MoneyManager/moneymanager.xst" -ofn "C:/Proyectos Rick/MoneyManager/moneymanager.syr" 
+xst -intstyle ise -ifn "C:/Proyectos Rick/MoneyManager/moneymanager.xst" -ofn "C:/Proyectos Rick/MoneyManager/moneymanager.syr" 
+xst -intstyle ise -ifn "C:/Proyectos Rick/MoneyManager/moneymanager.xst" -ofn "C:/Proyectos Rick/MoneyManager/moneymanager.syr" 
+xst -intstyle ise -ifn "C:/Proyectos Rick/MoneyManager/moneymanager.xst" -ofn "C:/Proyectos Rick/MoneyManager/moneymanager.syr" 
+xst -intstyle ise -ifn "C:/Proyectos Rick/MoneyManager/moneymanager.xst" -ofn "C:/Proyectos Rick/MoneyManager/moneymanager.syr" 
+xst -intstyle ise -ifn "C:/Proyectos Rick/MoneyManager/moneymanager.xst" -ofn "C:/Proyectos Rick/MoneyManager/moneymanager.syr" 
+xst -intstyle ise -ifn "C:/Proyectos Rick/MoneyManager/moneymanager.xst" -ofn "C:/Proyectos Rick/MoneyManager/moneymanager.syr" 
+xst -intstyle ise -ifn "C:/Proyectos Rick/MoneyManager/moneymanager.xst" -ofn "C:/Proyectos Rick/MoneyManager/moneymanager.syr" 
+xst -intstyle ise -ifn "C:/Proyectos Rick/MoneyManager/moneymanager.xst" -ofn "C:/Proyectos Rick/MoneyManager/moneymanager.syr" 
+xst -intstyle ise -ifn "C:/Proyectos Rick/MoneyManager/moneymanager.xst" -ofn "C:/Proyectos Rick/MoneyManager/moneymanager.syr" 
+xst -intstyle ise -ifn "C:/Proyectos Rick/MoneyManager/moneymanager.xst" -ofn "C:/Proyectos Rick/MoneyManager/moneymanager.syr" 
+xst -intstyle ise -ifn "C:/Proyectos Rick/MoneyManager/moneymanager.xst" -ofn "C:/Proyectos Rick/MoneyManager/moneymanager.syr" 
+xst -intstyle ise -ifn "C:/Proyectos Rick/MoneyManager/moneymanager.xst" -ofn "C:/Proyectos Rick/MoneyManager/moneymanager.syr" 
+xst -intstyle ise -ifn "C:/Proyectos Rick/MoneyManager/moneymanager.xst" -ofn "C:/Proyectos Rick/MoneyManager/moneymanager.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc moneymanager.ucf -p xc6slx16-csg324-3 "moneymanager.ngc" moneymanager.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o moneymanager_map.ncd moneymanager.ngd moneymanager.pcf 
+par -w -intstyle ise -ol high -mt off moneymanager_map.ncd moneymanager.ncd moneymanager.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml moneymanager.twx moneymanager.ncd -o moneymanager.twr moneymanager.pcf -ucf moneymanager.ucf 
+bitgen -intstyle ise -f moneymanager.ut moneymanager.ncd 
+xst -intstyle ise -ifn "C:/Proyectos Rick/MoneyManager/moneymanager.xst" -ofn "C:/Proyectos Rick/MoneyManager/moneymanager.syr" 
+xst -intstyle ise -ifn "C:/Proyectos Rick/MoneyManager/moneymanager.xst" -ofn "C:/Proyectos Rick/MoneyManager/moneymanager.syr" 
+xst -intstyle ise -ifn "C:/Proyectos Rick/MoneyManager/moneymanager.xst" -ofn "C:/Proyectos Rick/MoneyManager/moneymanager.syr" 
+xst -intstyle ise -ifn "C:/Proyectos Rick/MoneyManager/moneymanager.xst" -ofn "C:/Proyectos Rick/MoneyManager/moneymanager.syr" 
+xst -intstyle ise -ifn "C:/Proyectos Rick/MoneyManager/moneymanager.xst" -ofn "C:/Proyectos Rick/MoneyManager/moneymanager.syr" 
+xst -intstyle ise -ifn "C:/Proyectos Rick/MoneyManager/moneymanager.xst" -ofn "C:/Proyectos Rick/MoneyManager/moneymanager.syr" 
+xst -intstyle ise -ifn "C:/Proyectos Rick/MoneyManager/moneymanager.xst" -ofn "C:/Proyectos Rick/MoneyManager/moneymanager.syr" 
+xst -intstyle ise -ifn "C:/Proyectos Rick/MoneyManager/moneymanager.xst" -ofn "C:/Proyectos Rick/MoneyManager/moneymanager.syr" 
+xst -intstyle ise -ifn "C:/Proyectos Rick/MoneyManager/moneymanager.xst" -ofn "C:/Proyectos Rick/MoneyManager/moneymanager.syr" 
+xst -intstyle ise -ifn "C:/Proyectos Rick/MoneyManager/moneymanager.xst" -ofn "C:/Proyectos Rick/MoneyManager/moneymanager.syr" 
+xst -intstyle ise -ifn "C:/Proyectos Rick/MoneyManager/moneymanager.xst" -ofn "C:/Proyectos Rick/MoneyManager/moneymanager.syr" 
+xst -intstyle ise -ifn "C:/Proyectos Rick/MoneyManager/moneymanager.xst" -ofn "C:/Proyectos Rick/MoneyManager/moneymanager.syr" 
+xst -intstyle ise -ifn "C:/Proyectos Rick/MoneyManager/moneymanager.xst" -ofn "C:/Proyectos Rick/MoneyManager/moneymanager.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc moneymanager.ucf -p xc6slx16-csg324-3 "moneymanager.ngc" moneymanager.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o moneymanager_map.ncd moneymanager.ngd moneymanager.pcf 
+par -w -intstyle ise -ol high -mt off moneymanager_map.ncd moneymanager.ncd moneymanager.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml moneymanager.twx moneymanager.ncd -o moneymanager.twr moneymanager.pcf -ucf moneymanager.ucf 
+bitgen -intstyle ise -f moneymanager.ut moneymanager.ncd 
+xst -intstyle ise -ifn "C:/Proyectos Rick/MoneyManager/moneymanager.xst" -ofn "C:/Proyectos Rick/MoneyManager/moneymanager.syr" 
+xst -intstyle ise -ifn "C:/Proyectos Rick/MoneyManager/moneymanager.xst" -ofn "C:/Proyectos Rick/MoneyManager/moneymanager.syr" 
+xst -intstyle ise -ifn "C:/Proyectos Rick/MoneyManager/moneymanager.xst" -ofn "C:/Proyectos Rick/MoneyManager/moneymanager.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc moneymanager.ucf -p xc6slx16-csg324-3 "moneymanager.ngc" moneymanager.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o moneymanager_map.ncd moneymanager.ngd moneymanager.pcf 
+par -w -intstyle ise -ol high -mt off moneymanager_map.ncd moneymanager.ncd moneymanager.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml moneymanager.twx moneymanager.ncd -o moneymanager.twr moneymanager.pcf -ucf moneymanager.ucf 
+bitgen -intstyle ise -f moneymanager.ut moneymanager.ncd 
+xst -intstyle ise -ifn "C:/Proyectos Rick/MoneyManager/moneymanager.xst" -ofn "C:/Proyectos Rick/MoneyManager/moneymanager.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc moneymanager.ucf -p xc6slx16-csg324-3 "moneymanager.ngc" moneymanager.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o moneymanager_map.ncd moneymanager.ngd moneymanager.pcf 
+par -w -intstyle ise -ol high -mt off moneymanager_map.ncd moneymanager.ncd moneymanager.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml moneymanager.twx moneymanager.ncd -o moneymanager.twr moneymanager.pcf -ucf moneymanager.ucf 
+bitgen -intstyle ise -f moneymanager.ut moneymanager.ncd 
+xst -intstyle ise -ifn "C:/Proyectos Rick/MoneyManager/moneymanager.xst" -ofn "C:/Proyectos Rick/MoneyManager/moneymanager.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc moneymanager.ucf -p xc6slx16-csg324-3 "moneymanager.ngc" moneymanager.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o moneymanager_map.ncd moneymanager.ngd moneymanager.pcf 
+par -w -intstyle ise -ol high -mt off moneymanager_map.ncd moneymanager.ncd moneymanager.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml moneymanager.twx moneymanager.ncd -o moneymanager.twr moneymanager.pcf -ucf moneymanager.ucf 
+bitgen -intstyle ise -f moneymanager.ut moneymanager.ncd 
+xst -intstyle ise -ifn "C:/Proyectos Rick/MoneyManager/moneymanager.xst" -ofn "C:/Proyectos Rick/MoneyManager/moneymanager.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc moneymanager.ucf -p xc6slx16-csg324-3 "moneymanager.ngc" moneymanager.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o moneymanager_map.ncd moneymanager.ngd moneymanager.pcf 
+par -w -intstyle ise -ol high -mt off moneymanager_map.ncd moneymanager.ncd moneymanager.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml moneymanager.twx moneymanager.ncd -o moneymanager.twr moneymanager.pcf -ucf moneymanager.ucf 
+bitgen -intstyle ise -f moneymanager.ut moneymanager.ncd 
+xst -intstyle ise -ifn "C:/Proyectos Rick/MoneyManager/moneymanager.xst" -ofn "C:/Proyectos Rick/MoneyManager/moneymanager.syr" 
+xst -intstyle ise -ifn "C:/Proyectos Rick/MoneyManager/moneymanager.xst" -ofn "C:/Proyectos Rick/MoneyManager/moneymanager.syr" 
+xst -intstyle ise -ifn "C:/Proyectos Rick/MoneyManager/moneymanager.xst" -ofn "C:/Proyectos Rick/MoneyManager/moneymanager.syr" 
+xst -intstyle ise -ifn "C:/Proyectos Rick/MoneyManager/moneymanager.xst" -ofn "C:/Proyectos Rick/MoneyManager/moneymanager.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc moneymanager.ucf -p xc6slx16-csg324-3 "moneymanager.ngc" moneymanager.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o moneymanager_map.ncd moneymanager.ngd moneymanager.pcf 
+par -w -intstyle ise -ol high -mt off moneymanager_map.ncd moneymanager.ncd moneymanager.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml moneymanager.twx moneymanager.ncd -o moneymanager.twr moneymanager.pcf -ucf moneymanager.ucf 
+bitgen -intstyle ise -f moneymanager.ut moneymanager.ncd 
+xst -intstyle ise -ifn "C:/Proyectos Rick/MoneyManager/moneymanager.xst" -ofn "C:/Proyectos Rick/MoneyManager/moneymanager.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc moneymanager.ucf -p xc6slx16-csg324-3 "moneymanager.ngc" moneymanager.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o moneymanager_map.ncd moneymanager.ngd moneymanager.pcf 
+par -w -intstyle ise -ol high -mt off moneymanager_map.ncd moneymanager.ncd moneymanager.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml moneymanager.twx moneymanager.ncd -o moneymanager.twr moneymanager.pcf -ucf moneymanager.ucf 
+bitgen -intstyle ise -f moneymanager.ut moneymanager.ncd 
+xst -intstyle ise -ifn "C:/Proyectos Rick/MoneyManager/moneymanager.xst" -ofn "C:/Proyectos Rick/MoneyManager/moneymanager.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc moneymanager.ucf -p xc6slx16-csg324-3 "moneymanager.ngc" moneymanager.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o moneymanager_map.ncd moneymanager.ngd moneymanager.pcf 
+par -w -intstyle ise -ol high -mt off moneymanager_map.ncd moneymanager.ncd moneymanager.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml moneymanager.twx moneymanager.ncd -o moneymanager.twr moneymanager.pcf -ucf moneymanager.ucf 
+bitgen -intstyle ise -f moneymanager.ut moneymanager.ncd 
+xst -intstyle ise -ifn "C:/Proyectos Rick/MoneyManager/moneymanager.xst" -ofn "C:/Proyectos Rick/MoneyManager/moneymanager.syr" 
+xst -intstyle ise -ifn "C:/Proyectos Rick/MoneyManager/moneymanager.xst" -ofn "C:/Proyectos Rick/MoneyManager/moneymanager.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc moneymanager.ucf -p xc6slx16-csg324-3 "moneymanager.ngc" moneymanager.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o moneymanager_map.ncd moneymanager.ngd moneymanager.pcf 
+par -w -intstyle ise -ol high -mt off moneymanager_map.ncd moneymanager.ncd moneymanager.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml moneymanager.twx moneymanager.ncd -o moneymanager.twr moneymanager.pcf -ucf moneymanager.ucf 
+bitgen -intstyle ise -f moneymanager.ut moneymanager.ncd 
+xst -intstyle ise -ifn "C:/Proyectos Rick/MoneyManager/moneymanager.xst" -ofn "C:/Proyectos Rick/MoneyManager/moneymanager.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc moneymanager.ucf -p xc6slx16-csg324-3 "moneymanager.ngc" moneymanager.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o moneymanager_map.ncd moneymanager.ngd moneymanager.pcf 
+par -w -intstyle ise -ol high -mt off moneymanager_map.ncd moneymanager.ncd moneymanager.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml moneymanager.twx moneymanager.ncd -o moneymanager.twr moneymanager.pcf -ucf moneymanager.ucf 
+bitgen -intstyle ise -f moneymanager.ut moneymanager.ncd 
+xst -intstyle ise -ifn "C:/Proyectos Rick/MoneyManager/moneymanager.xst" -ofn "C:/Proyectos Rick/MoneyManager/moneymanager.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc moneymanager.ucf -p xc6slx16-csg324-3 "moneymanager.ngc" moneymanager.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o moneymanager_map.ncd moneymanager.ngd moneymanager.pcf 
+par -w -intstyle ise -ol high -mt off moneymanager_map.ncd moneymanager.ncd moneymanager.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml moneymanager.twx moneymanager.ncd -o moneymanager.twr moneymanager.pcf -ucf moneymanager.ucf 
+bitgen -intstyle ise -f moneymanager.ut moneymanager.ncd 
+xst -intstyle ise -ifn "C:/Proyectos Rick/MoneyManager/moneymanager.xst" -ofn "C:/Proyectos Rick/MoneyManager/moneymanager.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc moneymanager.ucf -p xc6slx16-csg324-3 "moneymanager.ngc" moneymanager.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o moneymanager_map.ncd moneymanager.ngd moneymanager.pcf 
+par -w -intstyle ise -ol high -mt off moneymanager_map.ncd moneymanager.ncd moneymanager.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml moneymanager.twx moneymanager.ncd -o moneymanager.twr moneymanager.pcf -ucf moneymanager.ucf 
+bitgen -intstyle ise -f moneymanager.ut moneymanager.ncd 
+xst -intstyle ise -ifn "C:/Proyectos Rick/MoneyManager/moneymanager.xst" -ofn "C:/Proyectos Rick/MoneyManager/moneymanager.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc moneymanager.ucf -p xc6slx16-csg324-3 "moneymanager.ngc" moneymanager.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o moneymanager_map.ncd moneymanager.ngd moneymanager.pcf 
+par -w -intstyle ise -ol high -mt off moneymanager_map.ncd moneymanager.ncd moneymanager.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml moneymanager.twx moneymanager.ncd -o moneymanager.twr moneymanager.pcf -ucf moneymanager.ucf 
+bitgen -intstyle ise -f moneymanager.ut moneymanager.ncd 
+xst -intstyle ise -ifn "C:/Proyectos Rick/MoneyManager/moneymanager.xst" -ofn "C:/Proyectos Rick/MoneyManager/moneymanager.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc moneymanager.ucf -p xc6slx16-csg324-3 "moneymanager.ngc" moneymanager.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o moneymanager_map.ncd moneymanager.ngd moneymanager.pcf 
+par -w -intstyle ise -ol high -mt off moneymanager_map.ncd moneymanager.ncd moneymanager.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml moneymanager.twx moneymanager.ncd -o moneymanager.twr moneymanager.pcf -ucf moneymanager.ucf 
+bitgen -intstyle ise -f moneymanager.ut moneymanager.ncd 
+xst -intstyle ise -ifn "C:/Proyectos Rick/MoneyManager/moneymanager.xst" -ofn "C:/Proyectos Rick/MoneyManager/moneymanager.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc moneymanager.ucf -p xc6slx16-csg324-3 "moneymanager.ngc" moneymanager.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o moneymanager_map.ncd moneymanager.ngd moneymanager.pcf 
+par -w -intstyle ise -ol high -mt off moneymanager_map.ncd moneymanager.ncd moneymanager.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml moneymanager.twx moneymanager.ncd -o moneymanager.twr moneymanager.pcf -ucf moneymanager.ucf 
+bitgen -intstyle ise -f moneymanager.ut moneymanager.ncd 
+xst -intstyle ise -ifn "C:/Proyectos Rick/MoneyManager/moneymanager.xst" -ofn "C:/Proyectos Rick/MoneyManager/moneymanager.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc moneymanager.ucf -p xc6slx16-csg324-3 "moneymanager.ngc" moneymanager.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o moneymanager_map.ncd moneymanager.ngd moneymanager.pcf 
+par -w -intstyle ise -ol high -mt off moneymanager_map.ncd moneymanager.ncd moneymanager.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml moneymanager.twx moneymanager.ncd -o moneymanager.twr moneymanager.pcf -ucf moneymanager.ucf 
+bitgen -intstyle ise -f moneymanager.ut moneymanager.ncd 
+xst -intstyle ise -ifn "C:/Proyectos Rick/MoneyManager/moneymanager.xst" -ofn "C:/Proyectos Rick/MoneyManager/moneymanager.syr" 
+xst -intstyle ise -ifn "C:/Proyectos Rick/MoneyManager/moneymanager.xst" -ofn "C:/Proyectos Rick/MoneyManager/moneymanager.syr" 
+xst -intstyle ise -ifn "C:/Proyectos Rick/MoneyManager/moneymanager.xst" -ofn "C:/Proyectos Rick/MoneyManager/moneymanager.syr" 
+xst -intstyle ise -ifn "C:/Proyectos Rick/MoneyManager/moneymanager.xst" -ofn "C:/Proyectos Rick/MoneyManager/moneymanager.syr" 
+xst -intstyle ise -ifn "C:/Proyectos Rick/MoneyManager/moneymanager.xst" -ofn "C:/Proyectos Rick/MoneyManager/moneymanager.syr" 
+xst -intstyle ise -ifn "C:/Proyectos Rick/MoneyManager/moneymanager.xst" -ofn "C:/Proyectos Rick/MoneyManager/moneymanager.syr" 
+xst -intstyle ise -ifn "C:/Proyectos Rick/MoneyManager/moneymanager.xst" -ofn "C:/Proyectos Rick/MoneyManager/moneymanager.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc moneymanager.ucf -p xc6slx16-csg324-3 "moneymanager.ngc" moneymanager.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o moneymanager_map.ncd moneymanager.ngd moneymanager.pcf 
+par -w -intstyle ise -ol high -mt off moneymanager_map.ncd moneymanager.ncd moneymanager.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml moneymanager.twx moneymanager.ncd -o moneymanager.twr moneymanager.pcf -ucf moneymanager.ucf 
+bitgen -intstyle ise -f moneymanager.ut moneymanager.ncd 
+xst -intstyle ise -ifn "C:/Proyectos Rick/MoneyManager/moneymanager.xst" -ofn "C:/Proyectos Rick/MoneyManager/moneymanager.syr" 
+xst -intstyle ise -ifn "C:/Proyectos Rick/MoneyManager/moneymanager.xst" -ofn "C:/Proyectos Rick/MoneyManager/moneymanager.syr" 
+xst -intstyle ise -ifn "C:/Proyectos Rick/MoneyManager/moneymanager.xst" -ofn "C:/Proyectos Rick/MoneyManager/moneymanager.syr" 
+xst -intstyle ise -ifn "C:/Proyectos Rick/MoneyManager/moneymanager.xst" -ofn "C:/Proyectos Rick/MoneyManager/moneymanager.syr" 
+xst -intstyle ise -ifn "C:/Proyectos Rick/MoneyManager/moneymanager.xst" -ofn "C:/Proyectos Rick/MoneyManager/moneymanager.syr" 
+xst -intstyle ise -ifn "C:/Proyectos Rick/MoneyManager/moneymanager.xst" -ofn "C:/Proyectos Rick/MoneyManager/moneymanager.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc moneymanager.ucf -p xc6slx16-csg324-3 "moneymanager.ngc" moneymanager.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o moneymanager_map.ncd moneymanager.ngd moneymanager.pcf 
+par -w -intstyle ise -ol high -mt off moneymanager_map.ncd moneymanager.ncd moneymanager.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml moneymanager.twx moneymanager.ncd -o moneymanager.twr moneymanager.pcf -ucf moneymanager.ucf 
+bitgen -intstyle ise -f moneymanager.ut moneymanager.ncd 
+xst -intstyle ise -ifn "C:/Proyectos Rick/MoneyManager/moneymanager.xst" -ofn "C:/Proyectos Rick/MoneyManager/moneymanager.syr" 
+xst -intstyle ise -ifn "C:/Proyectos Rick/MoneyManager/moneymanager.xst" -ofn "C:/Proyectos Rick/MoneyManager/moneymanager.syr" 
+xst -intstyle ise -ifn "C:/Proyectos Rick/MoneyManager/moneymanager.xst" -ofn "C:/Proyectos Rick/MoneyManager/moneymanager.syr" 
+xst -intstyle ise -ifn "C:/Proyectos Rick/MoneyManager/moneymanager.xst" -ofn "C:/Proyectos Rick/MoneyManager/moneymanager.syr" 
+xst -intstyle ise -ifn "C:/Proyectos Rick/MoneyManager/moneymanager.xst" -ofn "C:/Proyectos Rick/MoneyManager/moneymanager.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc moneymanager.ucf -p xc6slx16-csg324-3 "moneymanager.ngc" moneymanager.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o moneymanager_map.ncd moneymanager.ngd moneymanager.pcf 
+par -w -intstyle ise -ol high -mt off moneymanager_map.ncd moneymanager.ncd moneymanager.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml moneymanager.twx moneymanager.ncd -o moneymanager.twr moneymanager.pcf -ucf moneymanager.ucf 
+bitgen -intstyle ise -f moneymanager.ut moneymanager.ncd 
+xst -intstyle ise -ifn "C:/Proyectos Rick/MoneyManager/moneymanager.xst" -ofn "C:/Proyectos Rick/MoneyManager/moneymanager.syr" 
+xst -intstyle ise -ifn "C:/Proyectos Rick/MoneyManager/moneymanager.xst" -ofn "C:/Proyectos Rick/MoneyManager/moneymanager.syr" 
+xst -intstyle ise -ifn "C:/Proyectos Rick/MoneyManager/moneymanager.xst" -ofn "C:/Proyectos Rick/MoneyManager/moneymanager.syr" 
+xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/MoneyManager/moneymanager.xst" -ofn "D:/Repositories/ProySisDigAva/MoneyManager/moneymanager.syr" 
+xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/MoneyManager/moneymanager.xst" -ofn "D:/Repositories/ProySisDigAva/MoneyManager/moneymanager.syr" 
+xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/MoneyManager/moneymanager.xst" -ofn "D:/Repositories/ProySisDigAva/MoneyManager/moneymanager.syr" 
+xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/MoneyManager/moneymanager.xst" -ofn "D:/Repositories/ProySisDigAva/MoneyManager/moneymanager.syr" 
+xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/MoneyManager/moneymanager.xst" -ofn "D:/Repositories/ProySisDigAva/MoneyManager/moneymanager.syr" 
+xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/MoneyManager/moneymanager.xst" -ofn "D:/Repositories/ProySisDigAva/MoneyManager/moneymanager.syr" 
+xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/MoneyManager/moneymanager.xst" -ofn "D:/Repositories/ProySisDigAva/MoneyManager/moneymanager.syr" 
+xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/MoneyManager/moneymanager.xst" -ofn "D:/Repositories/ProySisDigAva/MoneyManager/moneymanager.syr" 
+xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/MoneyManager/moneymanager.xst" -ofn "D:/Repositories/ProySisDigAva/MoneyManager/moneymanager.syr" 
+xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/MoneyManager/moneymanager.xst" -ofn "D:/Repositories/ProySisDigAva/MoneyManager/moneymanager.syr" 
+xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/MoneyManager/moneymanager.xst" -ofn "D:/Repositories/ProySisDigAva/MoneyManager/moneymanager.syr" 
+xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/MoneyManager/moneymanager.xst" -ofn "D:/Repositories/ProySisDigAva/MoneyManager/moneymanager.syr" 
+xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/MoneyManager/moneymanager.xst" -ofn "D:/Repositories/ProySisDigAva/MoneyManager/moneymanager.syr" 
+xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/MoneyManager/moneymanager.xst" -ofn "D:/Repositories/ProySisDigAva/MoneyManager/moneymanager.syr" 
+xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/MoneyManager/moneymanager.xst" -ofn "D:/Repositories/ProySisDigAva/MoneyManager/moneymanager.syr" 
+xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/MoneyManager/moneymanager.xst" -ofn "D:/Repositories/ProySisDigAva/MoneyManager/moneymanager.syr" 
+xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/MoneyManager/moneymanager.xst" -ofn "D:/Repositories/ProySisDigAva/MoneyManager/moneymanager.syr" 
+xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/MoneyManager/moneymanager.xst" -ofn "D:/Repositories/ProySisDigAva/MoneyManager/moneymanager.syr" 
+xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/MoneyManager/moneymanager.xst" -ofn "D:/Repositories/ProySisDigAva/MoneyManager/moneymanager.syr" 
+xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/MoneyManager/moneymanager.xst" -ofn "D:/Repositories/ProySisDigAva/MoneyManager/moneymanager.syr" 
+xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/MoneyManager/moneymanager.xst" -ofn "D:/Repositories/ProySisDigAva/MoneyManager/moneymanager.syr" 
+xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/MoneyManager/moneymanager.xst" -ofn "D:/Repositories/ProySisDigAva/MoneyManager/moneymanager.syr" 
+xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/MoneyManager/moneymanager.xst" -ofn "D:/Repositories/ProySisDigAva/MoneyManager/moneymanager.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc moneymanager.ucf -p xc6slx16-csg324-3 moneymanager.ngc moneymanager.ngd  
+xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/MoneyManager/moneymanager.xst" -ofn "D:/Repositories/ProySisDigAva/MoneyManager/moneymanager.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc moneymanager.ucf -p xc6slx16-csg324-3 moneymanager.ngc moneymanager.ngd  
+xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/MoneyManager/moneymanager.xst" -ofn "D:/Repositories/ProySisDigAva/MoneyManager/moneymanager.syr" 
+xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/MoneyManager/moneymanager.xst" -ofn "D:/Repositories/ProySisDigAva/MoneyManager/moneymanager.syr" 
+xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/MoneyManager/moneymanager.xst" -ofn "D:/Repositories/ProySisDigAva/MoneyManager/moneymanager.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc moneymanager.ucf -p xc6slx16-csg324-3 moneymanager.ngc moneymanager.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc moneymanager.ucf -p xc6slx16-csg324-3 moneymanager.ngc moneymanager.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o moneymanager_map.ncd moneymanager.ngd moneymanager.pcf 
+par -w -intstyle ise -ol high -mt off moneymanager_map.ncd moneymanager.ncd moneymanager.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml moneymanager.twx moneymanager.ncd -o moneymanager.twr moneymanager.pcf -ucf moneymanager.ucf 
+bitgen -intstyle ise -f moneymanager.ut moneymanager.ncd 
+xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/MoneyManager/moneymanager.xst" -ofn "D:/Repositories/ProySisDigAva/MoneyManager/moneymanager.syr" 
+xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/MoneyManager/moneymanager.xst" -ofn "D:/Repositories/ProySisDigAva/MoneyManager/moneymanager.syr" 
+xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/MoneyManager/moneymanager.xst" -ofn "D:/Repositories/ProySisDigAva/MoneyManager/moneymanager.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc moneymanager.ucf -p xc6slx16-csg324-3 moneymanager.ngc moneymanager.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o moneymanager_map.ncd moneymanager.ngd moneymanager.pcf 
+par -w -intstyle ise -ol high -mt off moneymanager_map.ncd moneymanager.ncd moneymanager.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml moneymanager.twx moneymanager.ncd -o moneymanager.twr moneymanager.pcf -ucf moneymanager.ucf 
+bitgen -intstyle ise -f moneymanager.ut moneymanager.ncd 
+xst -intstyle ise -ifn "D:/Repositories/ProySisDigAva/MoneyManager/moneymanager.xst" -ofn "D:/Repositories/ProySisDigAva/MoneyManager/moneymanager.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc moneymanager.ucf -p xc6slx16-csg324-3 moneymanager.ngc moneymanager.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o moneymanager_map.ncd moneymanager.ngd moneymanager.pcf 
+par -w -intstyle ise -ol high -mt off moneymanager_map.ncd moneymanager.ncd moneymanager.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml moneymanager.twx moneymanager.ncd -o moneymanager.twr moneymanager.pcf -ucf moneymanager.ucf 

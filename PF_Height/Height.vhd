@@ -27,7 +27,7 @@ entity Height is
     Port (Clk     : in  STD_LOGIC;
 			 Echo	   : in  STD_LOGIC;
 			 Req		: in  STD_LOGIC;
-			 LED		: out STD_LOGIC_VECTOR(3 downto 0);
+			 LED		: out STD_LOGIC_VECTOR(1 downto 0);
 			 Trigger : out STD_LOGIC);
 end Height;
 
@@ -84,14 +84,12 @@ begin
   variable Vehicle_Height : integer := 0;
   begin
 	Vehicle_Height := Total_Height - Echo_time;	
-	if (Vehicle_Height > 90000) then
-		LED <= "1000";
-	elsif (Vehicle_Height > 60000) then
-		LED <= "0100";
+	if (Vehicle_Height > 60000) then
+		LED <= "11";
 	elsif (Vehicle_Height > 30000) then
-		LED <= "0010";
+		LED <= "10";
 	else
-		LED <= "0001";
+		LED <= "01";
 	end if;
 	
 	--LED <= CONV_STD_LOGIC_VECTOR(Fee, 4);

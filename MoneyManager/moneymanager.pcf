@@ -1,0 +1,16 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Mon Dec 09 14:50:33 2019
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "Add" LOCATE = SITE "C4" LEVEL 1;
+COMP "Switches<0>" LOCATE = SITE "T10" LEVEL 1;
+COMP "Switches<1>" LOCATE = SITE "T9" LEVEL 1;
+COMP "Switches<2>" LOCATE = SITE "V9" LEVEL 1;
+COMP "Switches<3>" LOCATE = SITE "M8" LEVEL 1;
+COMP "Switches<4>" LOCATE = SITE "N8" LEVEL 1;
+COMP "Switches<5>" LOCATE = SITE "U8" LEVEL 1;
+COMP "Switches<6>" LOCATE = SITE "V8" LEVEL 1;
+COMP "Switches<7>" LOCATE = SITE "T5" LEVEL 1;
+SCHEMATIC END;
+

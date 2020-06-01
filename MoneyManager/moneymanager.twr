@@ -1,0 +1,86 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+D:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml moneymanager.twx moneymanager.ncd -o moneymanager.twr
+moneymanager.pcf -ucf moneymanager.ucf
+
+Design file:              moneymanager.ncd
+Physical constraint file: moneymanager.pcf
+Device,package,speed:     xc6slx16,csg324,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock Clk
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+Add         |    0.891(R)|      FAST  |   -0.005(R)|      SLOW  |Clk_BUFGP         |   0.000|
+Addr<0>     |    0.551(R)|      FAST  |    0.429(R)|      SLOW  |Clk_BUFGP         |   0.000|
+Addr<1>     |    0.472(R)|      FAST  |    0.500(R)|      SLOW  |Clk_BUFGP         |   0.000|
+Addr<2>     |    0.282(R)|      FAST  |    0.881(R)|      SLOW  |Clk_BUFGP         |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock Clk to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+Money<4>    |         7.585(R)|      SLOW  |         3.982(R)|      FAST  |Clk_BUFGP         |   0.000|
+Money<5>    |         7.495(R)|      SLOW  |         3.859(R)|      FAST  |Clk_BUFGP         |   0.000|
+Money<6>    |         7.384(R)|      SLOW  |         3.812(R)|      FAST  |Clk_BUFGP         |   0.000|
+Money<7>    |         7.173(R)|      SLOW  |         3.698(R)|      FAST  |Clk_BUFGP         |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+Addr<0>        |Money<4>       |    6.898|
+Addr<0>        |Money<5>       |    6.808|
+Addr<0>        |Money<6>       |    6.697|
+Addr<0>        |Money<7>       |    6.486|
+Addr<1>        |Money<4>       |    6.763|
+Addr<1>        |Money<5>       |    6.673|
+Addr<1>        |Money<6>       |    6.562|
+Addr<1>        |Money<7>       |    6.351|
+Addr<2>        |Money<4>       |    6.475|
+Addr<2>        |Money<5>       |    6.385|
+Addr<2>        |Money<6>       |    6.274|
+Addr<2>        |Money<7>       |    6.063|
+---------------+---------------+---------+
+
+
+Analysis completed Mon Dec 09 14:50:48 2019 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4574 MB
+
+
+

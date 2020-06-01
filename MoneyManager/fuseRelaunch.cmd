@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "D:/Repositories/ProySisDigAva/MoneyManager/MoneyManager_tb_isim_beh.exe" -prj "D:/Repositories/ProySisDigAva/MoneyManager/MoneyManager_tb_beh.prj" "work.MoneyManager_tb" 

@@ -1,0 +1,309 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Reading design: Top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Top.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Top"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : Top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Users\Moral\Desktop\Parking_lot\Top.vhd" into library work
+Parsing entity <Top>.
+Parsing architecture <Parking_lot_Arch> of entity <top>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <Top> (architecture <Parking_lot_Arch>) from library <work>.
+WARNING:HDLCompiler:89 - "C:\Users\Moral\Desktop\Parking_lot\Top.vhd" Line 49: <moneymanager> remains a black-box since it has no binding entity.
+WARNING:HDLCompiler:89 - "C:\Users\Moral\Desktop\Parking_lot\Top.vhd" Line 60: <bc_reader> remains a black-box since it has no binding entity.
+WARNING:HDLCompiler:89 - "C:\Users\Moral\Desktop\Parking_lot\Top.vhd" Line 69: <ultrasonic_sensor> remains a black-box since it has no binding entity.
+WARNING:HDLCompiler:89 - "C:\Users\Moral\Desktop\Parking_lot\Top.vhd" Line 80: <next_state> remains a black-box since it has no binding entity.
+WARNING:HDLCompiler:89 - "C:\Users\Moral\Desktop\Parking_lot\Top.vhd" Line 91: <present_state> remains a black-box since it has no binding entity.
+WARNING:HDLCompiler:89 - "C:\Users\Moral\Desktop\Parking_lot\Top.vhd" Line 100: <aprover> remains a black-box since it has no binding entity.
+WARNING:HDLCompiler:89 - "C:\Users\Moral\Desktop\Parking_lot\Top.vhd" Line 110: <vga> remains a black-box since it has no binding entity.
+WARNING:HDLCompiler:89 - "C:\Users\Moral\Desktop\Parking_lot\Top.vhd" Line 123: <vga_display> remains a black-box since it has no binding entity.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Top>.
+    Related source file is "C:\Users\Moral\Desktop\Parking_lot\Top.vhd".
+    Summary:
+	no macro.
+Unit <Top> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <Top> ...
+
+Mapping all equations...
+WARNING:Xst:2036 - Inserting OBUF on port <Red<2>> driven by black box <VGA_Display>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <Red<1>> driven by black box <VGA_Display>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <Red<0>> driven by black box <VGA_Display>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <Green<2>> driven by black box <VGA_Display>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <Green<1>> driven by black box <VGA_Display>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <Green<0>> driven by black box <VGA_Display>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <Blue<1>> driven by black box <VGA_Display>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <Blue<0>> driven by black box <VGA_Display>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <Trigger> driven by black box <Ultrasonic_Sensor>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <Servo> driven by black box <Aprover>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <Hsync> driven by black box <VGA>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <Vsync> driven by black box <VGA>. Possible simulation mismatch.
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Top, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Top.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# IO Buffers                       : 27
+#      IBUF                        : 15
+#      OBUF                        : 12
+# Others                           : 8
+#      Aprover                     : 1
+#      BC_Reader                   : 1
+#      MoneyManager                : 1
+#      Next_State                  : 1
+#      Present_State               : 1
+#      Ultrasonic_Sensor           : 1
+#      VGA                         : 1
+#      VGA_Display                 : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:      0
+   Number with an unused Flip Flop:       0  out of      0         
+   Number with an unused LUT:             0  out of      0         
+   Number of fully used LUT-FF pairs:     0  out of      0         
+   Number of unique control sets:         0
+
+IO Utilization: 
+ Number of IOs:                          27
+ Number of bonded IOBs:                  27  out of    232    11%  
+
+Specific Feature Utilization:
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 3.150ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 84 / 84
+-------------------------------------------------------------------------
+Delay:               3.150ns (Levels of Logic = 1)
+  Source:            U8:R<2> (PAD)
+  Destination:       Red<2> (PAD)
+
+  Data Path: U8:R<2> to Red<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    VGA_Display:R<2>       1   0.000   0.579  U8 (Red_2_OBUF)
+     OBUF:I->O                 2.571          Red_2_OBUF (Red<2>)
+    ----------------------------------------
+    Total                      3.150ns (2.571ns logic, 0.579ns route)
+                                       (81.6% logic, 18.4% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 4.34 secs
+ 
+--> 
+
+Total memory usage is 4511440 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   20 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

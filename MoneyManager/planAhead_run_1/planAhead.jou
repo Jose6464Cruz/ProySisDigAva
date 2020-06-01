@@ -1,0 +1,43 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Sun Dec 08 14:49:59 2019
+# Process ID: 11800
+# Log file: C:/Proyectos Rick/MoneyManager/planAhead_run_1/planAhead.log
+# Journal file: C:/Proyectos Rick/MoneyManager/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source {C:/Proyectos Rick/MoneyManager/pa.fromHdl.tcl}
+update_compile_order -fileset sim_1
+set_property package_pin "" [get_ports [list  Rst]]
+startgroup
+set_property package_pin C4 [get_ports Add]
+endgroup
+startgroup
+set_property package_pin B8 [get_ports Rst]
+endgroup
+startgroup
+set_property package_pin T5 [get_ports {BCD[7]}]
+endgroup
+startgroup
+set_property package_pin V8 [get_ports {BCD[6]}]
+endgroup
+startgroup
+set_property package_pin U8 [get_ports {BCD[5]}]
+endgroup
+startgroup
+set_property package_pin N8 [get_ports {BCD[4]}]
+endgroup
+startgroup
+set_property package_pin M8 [get_ports {BCD[3]}]
+endgroup
+startgroup
+set_property package_pin V9 [get_ports {BCD[2]}]
+endgroup
+startgroup
+set_property package_pin T9 [get_ports {BCD[1]}]
+endgroup
+startgroup
+set_property package_pin T10 [get_ports {BCD[0]}]
+endgroup
+save_constraints

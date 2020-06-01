@@ -1,0 +1,60 @@
+
+****** PlanAhead v14.7
+  **** Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+    ** Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
+
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Common 17-86] Your PlanAhead license expires in -1194 day(s)
+INFO: [Device 21-36] Loading parts and site information from D:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [D:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [D:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source D:/Repositories/ProySisDigAva/MoneyManager/pa.fromHdl.tcl
+# create_project -name MoneyManager -dir "D:/Repositories/ProySisDigAva/MoneyManager/planAhead_run_4" -part xc6slx16csg324-3
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "moneymanager.ucf" [current_fileset -constrset]
+Adding file 'D:/Repositories/ProySisDigAva/MoneyManager/moneymanager.ucf' to fileset 'constrs_1'
+# set hdlfile [add_files [list {moneymanager.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set_property top moneymanager $srcset
+# add_files [list {moneymanager.ucf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc6slx16csg324-3
+Using Verific elaboration
+Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "D:/Repositories/ProySisDigAva/MoneyManager/moneymanager.vhd" into library work
+WARNING: [HDL 9-806] Syntax error near "begin". [D:/Repositories/ProySisDigAva/MoneyManager/moneymanager.vhd:63]
+WARNING: [HDL 9-806] Syntax error near "process". [D:/Repositories/ProySisDigAva/MoneyManager/moneymanager.vhd:70]
+WARNING: [HDL 9-806] Syntax error near "begin". [D:/Repositories/ProySisDigAva/MoneyManager/moneymanager.vhd:71]
+Loading clock regions from D:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx16/ClockRegion.xml
+Loading clock buffers from D:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx16/ClockBuffers.xml
+Loading package pin functions from D:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/PinFunctions.xml...
+Loading package from D:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx16/csg324/Package.xml
+Loading io standards from D:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/IOStandards.xml
+Loading device configuration modes from D:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/ConfigModes.xml
+Loading list of drcs for the architecture : D:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/drc.xml
+Parsing UCF File [D:/Repositories/ProySisDigAva/MoneyManager/moneymanager.ucf]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'Rst' [D:/Repositories/ProySisDigAva/MoneyManager/moneymanager.ucf:4]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'BCD[7]' [D:/Repositories/ProySisDigAva/MoneyManager/moneymanager.ucf:5]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'BCD[6]' [D:/Repositories/ProySisDigAva/MoneyManager/moneymanager.ucf:6]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'BCD[5]' [D:/Repositories/ProySisDigAva/MoneyManager/moneymanager.ucf:7]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'BCD[4]' [D:/Repositories/ProySisDigAva/MoneyManager/moneymanager.ucf:8]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'BCD[3]' [D:/Repositories/ProySisDigAva/MoneyManager/moneymanager.ucf:9]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'BCD[2]' [D:/Repositories/ProySisDigAva/MoneyManager/moneymanager.ucf:10]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'BCD[1]' [D:/Repositories/ProySisDigAva/MoneyManager/moneymanager.ucf:11]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'BCD[0]' [D:/Repositories/ProySisDigAva/MoneyManager/moneymanager.ucf:12]
+Finished Parsing UCF File [D:/Repositories/ProySisDigAva/MoneyManager/moneymanager.ucf]
+INFO: [Designutils 20-20] Invalid constraints found, use command 'write_ucf -constraints invalid <file>' to save all the invalid constraints to a file
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: 7fc2556f
+open_rtl_design: Time (s): elapsed = 00:00:12 . Memory (MB): peak = 481.969 ; gain = 97.648
+update_compile_order -fileset sim_1
+exit
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Sun Dec 08 21:58:55 2019...
+INFO: [Common 17-83] Releasing license: PlanAhead

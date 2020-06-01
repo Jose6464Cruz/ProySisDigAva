@@ -1,0 +1,13 @@
+Running: D:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o D:/Repositories/ProySisDigAva/MoneyManager/MoneyManager_tb_isim_beh.exe -prj D:/Repositories/ProySisDigAva/MoneyManager/MoneyManager_tb_beh.prj work.MoneyManager_tb 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "D:/Repositories/ProySisDigAva/MoneyManager/moneymanager.vhd" into library work
+Parsing VHDL file "D:/Repositories/ProySisDigAva/MoneyManager/MoneyManager_tb.vhd" into library work
+Starting static elaboration
+WARNING:HDLCompiler:1242 - "N:/P.20131013/rtf/vhdl/src/ieee/std_logic_arith.vhd" Line 2278: Warning: "There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es)."
+WARNING:HDLCompiler:1242 - "N:/P.20131013/rtf/vhdl/src/ieee/std_logic_arith.vhd" Line 2281: Warning: "CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0."
+ERROR:HDLCompiler:432 - "D:/Repositories/ProySisDigAva/MoneyManager/moneymanager.vhd" Line 37: Formal <addr> has no actual or default value.
+ERROR:HDLCompiler:432 - "D:/Repositories/ProySisDigAva/MoneyManager/moneymanager.vhd" Line 40: Formal <clk> has no actual or default value.
+ERROR:Simulator:777 - Static elaboration of top level VHDL design unit moneymanager_tb in library work failed

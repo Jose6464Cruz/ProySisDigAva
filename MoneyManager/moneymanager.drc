@@ -1,0 +1,8 @@
+Release 14.7 Drc P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Sun Dec 08 23:56:28 2019
+
+drc -z moneymanager.ncd moneymanager.pcf
+
+DRC detected 0 errors and 0 warnings.

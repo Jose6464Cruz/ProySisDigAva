@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Reading design: Scanner_Last.prj
 
@@ -123,8 +123,8 @@ Synthesizing Unit <Scanner_Last>.
     Related source file is "D:\Repositories\ProySisDigAva\Proyecto_final_Scanner_last\Scanner_Last.vhd".
     Found 11-bit register for signal <Reg>.
     Found 7-bit register for signal <cont>.
-    Found 7-bit adder for signal <cont[6]_GND_6_o_add_1_OUT> created at line 52.
-    Found 7-bit comparator greater for signal <cont[6]_PWR_6_o_LessThan_1_o> created at line 50
+    Found 7-bit adder for signal <cont[6]_GND_6_o_add_1_OUT> created at line 47.
+    Found 7-bit comparator greater for signal <cont[6]_PWR_6_o_LessThan_1_o> created at line 45
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred  18 D-type flip-flop(s).
@@ -366,8 +366,8 @@ Clk_signal_Scan|         |         |    3.587|         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 7.00 secs
-Total CPU time to Xst completion: 6.58 secs
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 5.09 secs
  
 --> 
 

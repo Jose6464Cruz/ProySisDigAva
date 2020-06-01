@@ -1,0 +1,2 @@
+vhdl work "moneymanager.vhd"
+vhdl work "MoneyManager_tb.vhd"
